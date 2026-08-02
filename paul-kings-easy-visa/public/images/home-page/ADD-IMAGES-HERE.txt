@@ -1,0 +1,11 @@
+ADD YOUR OWN IMAGE FILES HERE USING THESE EXACT NAMES:
+
+paul-kings-logo.png
+paul-king-portrait.png
+british-passport.png
+pattaya-office-map.webp
+client-uk-couple.webp
+client-australia-couple.webp
+client-italy-couple.webp
+
+The hero slideshow requires no action from you. It keeps the same nine exact Unsplash image URLs from the approved hero section.
