@@ -1,0 +1,41 @@
+{
+  "status": "corrected_and_verified",
+  "sections": 7,
+  "faq_count": 8,
+  "remote_hero_slides": 9,
+  "bundled_local_images": [
+    "public/images/home-page/paul-kings-logo.png",
+    "public/images/home-page/paul-king-portrait.png",
+    "public/images/home-page/british-passport.png",
+    "public/images/home-page/pattaya-office-map.png",
+    "public/images/home-page/client-uk-couple.png",
+    "public/images/home-page/client-australia-couple.png",
+    "public/images/home-page/client-italy-couple.png"
+  ],
+  "fixes": [
+    "Changed client image paths from .webp to .png",
+    "Changed office map path from .webp to .png",
+    "Restored the underline beneath the Hero phrase right visa.",
+    "Bundled the tightly cropped approved British passport image",
+    "Removed the CSS transform override that blocked passport movement and scaling",
+    "Delayed the How We Help card reveal until the section enters the viewport",
+    "Preserved the Hero slideshow, How It Works scroll sequence, Client Stories reveal, Meet Paul reveal and mobile FAQ accordion"
+  ],
+  "verification": {
+    "typescript_transpile_syntax": "passed_12_files",
+    "local_image_reference_check": "passed_7_of_7",
+    "desktop_visual_checks": [
+      "hero underline visible",
+      "How We Help card reveal reaches final state",
+      "client photographs render",
+      "map renders",
+      "passport image renders and moves/scales through its 5.8 second cycle"
+    ],
+    "mobile_visual_checks": [
+      "client story photo and card layout render",
+      "passport renewal layout renders",
+      "FAQ accordion opens",
+      "contact cards and map render"
+    ]
+  }
+}
