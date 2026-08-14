@@ -2271,7 +2271,7 @@
   z-index: 3 !important;
   width: 100% !important;
   margin: -1px 0 0 !important;
-  border-radius: 0 0 28px 28px !important;
+  border-radius: 0 !important;
   box-shadow: 0 24px 48px rgba(247,87,0,.22) !important;
 }
 .pk-meet-scope .legal-services > .passport-renewal-feature::before{
