@@ -1,0 +1,9 @@
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; }
+.pk-hero-scope,
+.pk-help-scope,
+.pk-process-scope,
+.pk-client-scope,
+.pk-meet-scope,
+.pk-faq-scope,
+.pk-contact-scope { display: block; position: relative; }

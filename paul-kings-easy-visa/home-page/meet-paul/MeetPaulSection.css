@@ -1,0 +1,2755 @@
+/* ===== Meet Paul - Section 5.html ===== */
+.pk-meet-scope{
+  --orange:#f75700;
+  --orange-dark:#d94700;
+  --gold:#d8aa42;
+  --ink:#17130f;
+  --muted:#665e57;
+  --white:#ffffff;
+  --cream:#fffaf6;
+  --line:rgba(46,28,18,.10);
+  --shadow:0 30px 78px rgba(73,39,20,.15);
+  --max:1420px;
+}
+.pk-meet-scope *{
+  box-sizing:border-box;
+}
+.pk-meet-scope{
+  scroll-behavior:smooth;
+}
+.pk-meet-scope{
+  margin:0;
+  color:var(--ink);
+  background:var(--cream);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.pk-meet-scope .meet-section{
+  position:relative;
+  overflow:hidden;
+  padding:108px 0 122px;
+  background:
+    radial-gradient(circle at 7% 12%,rgba(247,87,0,.08),transparent 25rem),
+    radial-gradient(circle at 94% 16%,rgba(216,170,66,.12),transparent 24rem),
+    linear-gradient(180deg,#fffefd 0%,#fff8f2 100%);
+}
+.pk-meet-scope .meet-section::before{
+  content:"";
+  position:absolute;
+  top:120px;
+  right:-210px;
+  width:480px;
+  height:480px;
+  border:1px solid rgba(247,87,0,.11);
+  border-radius:50%;
+  pointer-events:none;
+}
+.pk-meet-scope .container{
+  position:relative;
+  z-index:1;
+  width:min(calc(100% - 84px),var(--max));
+  margin-inline:auto;
+}
+.pk-meet-scope .section-heading{
+  max-width:980px;
+  margin:0 auto 74px;
+  text-align:center;
+}
+.pk-meet-scope .eyebrow{
+  display:flex;
+  width:max-content;
+  max-width:100%;
+  align-items:center;
+  gap:12px;
+  margin:0 auto 24px;
+  color:var(--orange-dark);
+  font-size:.75rem;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.pk-meet-scope .eyebrow::before,.pk-meet-scope .eyebrow::after{
+  content:"";
+  width:38px;
+  height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--orange));
+  border-radius:999px;
+}
+.pk-meet-scope .section-heading h1{
+  margin:0;
+  font-size:clamp(4rem,5.5vw,6.25rem);
+  line-height:.98;
+  letter-spacing:-.064em;
+}
+.pk-meet-scope .section-heading h1 span{
+  display:block;
+}
+.pk-meet-scope .section-heading h1 .highlight{
+  width:max-content;
+  max-width:100%;
+  margin:17px auto 0;
+  padding:11px 25px 15px;
+  color:#fff;
+  background:linear-gradient(135deg,#ff6900 0%,var(--orange) 58%,#e24700 100%);
+  border-radius:18px;
+  box-shadow:0 18px 38px rgba(247,87,0,.22),inset 0 1px 0 rgba(255,255,255,.24);
+}
+.pk-meet-scope .section-heading p{
+  max-width:790px;
+  margin:30px auto 0;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.72;
+}
+.pk-meet-scope .meet-card{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(430px,.88fr) minmax(0,1.12fr);
+  min-height:650px;
+  overflow:hidden;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:32px;
+  box-shadow:var(--shadow);
+}
+.pk-meet-scope .portrait-side{
+  position:relative;
+  min-height:650px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 35%,rgba(255,255,255,.82),transparent 14rem),
+    linear-gradient(145deg,#ffefe5 0%,#ffe0cd 48%,#f8d8c2 100%);
+}
+.pk-meet-scope .portrait-side::before,.pk-meet-scope .portrait-side::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  border-radius:50%;
+  transform:translateX(-50%);
+}
+.pk-meet-scope .portrait-side::before{
+  top:70px;
+  width:410px;
+  height:410px;
+  border:1px solid rgba(247,87,0,.16);
+}
+.pk-meet-scope .portrait-side::after{
+  top:117px;
+  width:315px;
+  height:315px;
+  border:1px solid rgba(216,170,66,.19);
+}
+.pk-meet-scope .paul-image{
+  position:absolute;
+  z-index:2;
+  right:0;
+  bottom:0;
+  left:0;
+  width:min(100%,480px);
+  max-height:620px;
+  margin-inline:auto;
+  object-fit:contain;
+  object-position:center bottom;
+  filter:drop-shadow(0 28px 30px rgba(49,25,12,.17));
+}
+.pk-meet-scope .name-badge{
+  position:absolute;
+  right:28px;
+  bottom:27px;
+  z-index:5;
+  min-width:190px;
+  padding:14px 17px;
+  color:#fff;
+  background:linear-gradient(135deg,#ff6500,var(--orange-dark));
+  border-radius:14px;
+  box-shadow:0 16px 32px rgba(247,87,0,.24);
+}
+.pk-meet-scope .name-badge strong,.pk-meet-scope .name-badge span{
+  display:block;
+}
+.pk-meet-scope .name-badge strong{
+  margin-bottom:3px;
+  font-size:.98rem;
+}
+.pk-meet-scope .name-badge span{
+  color:rgba(255,255,255,.80);
+  font-size:.64rem;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.pk-meet-scope .content-side{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:58px 58px 48px 74px;
+}
+.pk-meet-scope .content-side::before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:1px;
+  background:linear-gradient(180deg,transparent,rgba(247,87,0,.20),transparent);
+}
+.pk-meet-scope .intro-label{
+  display:inline-flex;
+  width:max-content;
+  align-items:center;
+  gap:10px;
+  margin-bottom:18px;
+  color:var(--orange-dark);
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.pk-meet-scope .intro-label::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--orange));
+  border-radius:999px;
+}
+.pk-meet-scope .content-side h2{
+  max-width:690px;
+  margin:0 0 17px;
+  font-size:clamp(2.8rem,4vw,4.5rem);
+  line-height:1.02;
+  letter-spacing:-.058em;
+}
+.pk-meet-scope .content-side > p{
+  max-width:700px;
+  margin:0;
+  color:var(--muted);
+  font-size:.98rem;
+  line-height:1.68;
+}
+.pk-meet-scope .speech-bubble{
+  position:relative;
+  margin-top:31px;
+  padding:29px 31px 30px;
+  background:#fff8f3;
+  border:2px solid rgba(247,87,0,.23);
+  border-radius:23px;
+  box-shadow:0 18px 40px rgba(91,47,23,.10);
+  opacity:0;
+  transform:translateX(28px);
+  transition:opacity 520ms ease,transform 620ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-meet-scope .speech-bubble::before{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:-22px;
+  width:39px;
+  height:39px;
+  background:#fff8f3;
+  border-bottom:2px solid rgba(247,87,0,.23);
+  border-left:2px solid rgba(247,87,0,.23);
+  transform:translateY(-50%) rotate(45deg);
+}
+.pk-meet-scope .speech-bubble::after{
+  content:"“";
+  position:absolute;
+  top:13px;
+  left:22px;
+  color:rgba(247,87,0,.18);
+  font-family:Georgia,serif;
+  font-size:5rem;
+  line-height:1;
+}
+.pk-meet-scope .speech-bubble p{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:#3f332b;
+  font-size:1.15rem;
+  font-weight:730;
+  line-height:1.54;
+  letter-spacing:-.018em;
+}
+.pk-meet-scope .speech-bubble strong{
+  color:var(--orange-dark);
+}
+.pk-meet-scope .meet-card.is-visible .speech-bubble{
+  opacity:1;
+  transform:translateX(0);
+}
+.pk-meet-scope .stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-top:23px;
+}
+.pk-meet-scope .stat{
+  min-height:112px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:18px 17px;
+  background:#fffaf6;
+  border:1px solid rgba(46,28,18,.08);
+  border-radius:17px;
+}
+.pk-meet-scope .stat strong,.pk-meet-scope .stat span{
+  display:block;
+}
+.pk-meet-scope .stat strong{
+  margin-bottom:7px;
+  color:var(--orange);
+  font-size:1.8rem;
+  line-height:1;
+  letter-spacing:-.045em;
+}
+.pk-meet-scope .stat span{
+  color:#524a43;
+  font-size:.72rem;
+  font-weight:760;
+  line-height:1.38;
+}
+@media (max-width:1020px){.pk-meet-scope .meet-card{
+    grid-template-columns:1fr;
+  }
+.pk-meet-scope .portrait-side{
+    min-height:540px;
+  }
+.pk-meet-scope .content-side{
+    padding:46px 44px 48px;
+    text-align:center;
+  }
+.pk-meet-scope .intro-label{
+    margin-inline:auto;
+  }
+.pk-meet-scope .content-side h2,.pk-meet-scope .content-side > p{
+    margin-inline:auto;
+  }
+.pk-meet-scope .content-side::before{
+    display:none;
+  }
+.pk-meet-scope .speech-bubble::before{
+    top:-20px;
+    left:50%;
+    transform:translateX(-50%) rotate(135deg);
+  }}
+@media (max-width:720px){.pk-meet-scope .meet-section{
+    padding:66px 0 80px;
+  }
+.pk-meet-scope .container{
+    width:calc(100% - 20px);
+  }
+.pk-meet-scope .section-heading{
+    margin-bottom:47px;
+  }
+.pk-meet-scope .eyebrow{
+    gap:8px;
+    margin-bottom:21px;
+    font-size:.58rem;
+  }
+.pk-meet-scope .eyebrow::before,.pk-meet-scope .eyebrow::after{
+    width:22px;
+  }
+.pk-meet-scope .section-heading h1{
+    font-size:clamp(2.55rem,11.8vw,3.5rem);
+    line-height:1.03;
+  }
+.pk-meet-scope .section-heading h1 .highlight{
+    margin-top:13px;
+    padding:8px 14px 10px;
+    border-radius:13px;
+  }
+.pk-meet-scope .section-heading p{
+    margin-top:24px;
+    font-size:.84rem;
+    line-height:1.57;
+  }
+.pk-meet-scope .meet-card{
+    min-height:0;
+    border-radius:23px;
+  }
+.pk-meet-scope .portrait-side{
+    min-height:390px;
+  }
+.pk-meet-scope .portrait-side::before{
+    top:52px;
+    width:270px;
+    height:270px;
+  }
+.pk-meet-scope .portrait-side::after{
+    top:84px;
+    width:205px;
+    height:205px;
+  }
+.pk-meet-scope .paul-image{
+    width:min(100%,315px);
+    max-height:380px;
+  }
+.pk-meet-scope .name-badge{
+    right:14px;
+    bottom:15px;
+    min-width:148px;
+    padding:10px 12px;
+  }
+.pk-meet-scope .name-badge strong{
+    font-size:.8rem;
+  }
+.pk-meet-scope .name-badge span{
+    font-size:.51rem;
+  }
+.pk-meet-scope .content-side{
+    padding:31px 18px 25px;
+  }
+.pk-meet-scope .intro-label{
+    margin-bottom:13px;
+    font-size:.55rem;
+  }
+.pk-meet-scope .content-side h2{
+    margin-bottom:12px;
+    font-size:clamp(2rem,9.5vw,2.75rem);
+  }
+.pk-meet-scope .content-side > p{
+    font-size:.79rem;
+    line-height:1.53;
+  }
+.pk-meet-scope .speech-bubble{
+    margin-top:23px;
+    padding:22px 18px 21px;
+    border-radius:17px;
+  }
+.pk-meet-scope .speech-bubble::before{
+    width:31px;
+    height:31px;
+    top:-16px;
+  }
+.pk-meet-scope .speech-bubble::after{
+    top:9px;
+    left:14px;
+    font-size:3.7rem;
+  }
+.pk-meet-scope .speech-bubble p{
+    font-size:.89rem;
+    line-height:1.47;
+  }
+.pk-meet-scope .stats{
+    grid-template-columns:1fr;
+    gap:8px;
+    margin-top:17px;
+  }
+.pk-meet-scope .stat{
+    min-height:0;
+    display:grid;
+    grid-template-columns:92px minmax(0,1fr);
+    align-items:center;
+    padding:13px 14px;
+    text-align:left;
+  }
+.pk-meet-scope .stat strong{
+    margin:0;
+    font-size:1.45rem;
+  }
+.pk-meet-scope .stat span{
+    font-size:.68rem;
+  }}
+/* V3: lift and blend Paul's portrait so the cutout edges disappear */
+.pk-meet-scope .portrait-side{
+  isolation: isolate;
+}
+.pk-meet-scope .portrait-side::after{
+  z-index: 0;
+}
+.pk-meet-scope .paul-image{
+  bottom: 24px;
+  width: min(100%, 500px);
+  max-height: 610px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 86%,
+    rgba(0, 0, 0, 0.92) 90%,
+    rgba(0, 0, 0, 0.45) 96%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 86%,
+    rgba(0, 0, 0, 0.92) 90%,
+    rgba(0, 0, 0, 0.45) 96%,
+    transparent 100%
+  );
+}
+.pk-meet-scope .portrait-side .portrait-floor{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  height: 92px;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(255, 224, 205, 0.42) 38%,
+      rgba(255, 224, 205, 0.88) 78%,
+      #ffe0cd 100%
+    );
+}
+.pk-meet-scope .name-badge{
+  z-index: 6;
+}
+@media (max-width: 720px){.pk-meet-scope .paul-image{
+    bottom: 16px;
+    width: min(100%, 330px);
+    max-height: 370px;
+  }
+.pk-meet-scope .portrait-side .portrait-floor{
+    height: 67px;
+  }}
+/* V4: clearly raise Paul's portrait */
+.pk-meet-scope .paul-image{
+  bottom: 82px !important;
+  width: min(100%, 510px);
+  max-height: 620px;
+}
+.pk-meet-scope .portrait-side .portrait-floor{
+  height: 135px;
+}
+@media (max-width: 720px){.pk-meet-scope .paul-image{
+    bottom: 42px !important;
+    width: min(100%, 335px);
+    max-height: 372px;
+  }
+.pk-meet-scope .portrait-side .portrait-floor{
+    height: 82px;
+  }}
+/* V5: align the visible top of Paul's head with the main heading */
+@media (min-width: 1021px){.pk-meet-scope .paul-image{
+    top: -18px !important;
+    bottom: auto !important;
+    width: min(100%, 510px);
+    max-height: 650px;
+  }
+.pk-meet-scope .portrait-side .portrait-floor{
+    height: 126px;
+  }}
+@media (max-width: 1020px) and (min-width: 721px){.pk-meet-scope .paul-image{
+    top: -4px !important;
+    bottom: auto !important;
+  }}
+@media (max-width: 720px){.pk-meet-scope .paul-image{
+    top: 5px !important;
+    bottom: auto !important;
+  }}
+/* V6: solid nameplate beneath Paul instead of a gradient fade */
+.pk-meet-scope .paul-image{
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  filter: drop-shadow(0 20px 24px rgba(49,25,12,.16));
+}
+.pk-meet-scope .portrait-side .portrait-floor{
+  display: none !important;
+}
+.pk-meet-scope .name-badge{
+  right: auto;
+  bottom: 28px;
+  left: 50%;
+  width: min(86%, 430px);
+  min-width: 0;
+  padding: 16px 22px 17px;
+  text-align: center;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff6500, var(--orange-dark));
+  box-shadow:
+    0 18px 34px rgba(247,87,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+.pk-meet-scope .name-badge strong{
+  margin-bottom: 5px;
+  font-size: 1.02rem;
+}
+.pk-meet-scope .name-badge span{
+  max-width: 360px;
+  margin-inline: auto;
+  font-size: 0.63rem;
+  line-height: 1.35;
+  letter-spacing: 0.075em;
+}
+@media (min-width: 1021px){.pk-meet-scope .paul-image{
+    top: -18px !important;
+    bottom: auto !important;
+  }
+.pk-meet-scope .name-badge{
+    bottom: 24px;
+  }}
+@media (max-width: 1020px) and (min-width: 721px){.pk-meet-scope .name-badge{
+    bottom: 22px;
+    width: min(78%, 400px);
+  }}
+@media (max-width: 720px){.pk-meet-scope .name-badge{
+    bottom: 14px;
+    width: min(88%, 310px);
+    padding: 12px 14px 13px;
+    border-radius: 13px;
+  }
+.pk-meet-scope .name-badge strong{
+    font-size: 0.84rem;
+  }
+.pk-meet-scope .name-badge span{
+    font-size: 0.51rem;
+    line-height: 1.35;
+  }}
+/* V7: connect the orange nameplate directly to Paul's portrait */
+.pk-meet-scope .portrait-stack{
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  z-index: 4;
+  width: 370px;
+  max-width: calc(100% - 42px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+}
+.pk-meet-scope .paul-image{
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-height: none !important;
+  margin: 0 !important;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 22px rgba(49,25,12,.15));
+}
+.pk-meet-scope .name-badge{
+  position: relative !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 92% !important;
+  min-width: 0 !important;
+  margin-top: -2px;
+  padding: 15px 20px 16px;
+  transform: none !important;
+  border-radius: 0 0 16px 16px;
+}
+@media (max-width: 1020px) and (min-width: 721px){.pk-meet-scope .portrait-side{
+    min-height: 620px;
+  }
+.pk-meet-scope .portrait-stack{
+    top: 8px;
+    width: 360px;
+  }}
+@media (max-width: 720px){.pk-meet-scope .portrait-side{
+    min-height: 438px;
+  }
+.pk-meet-scope .portrait-stack{
+    top: -4px;
+    width: 260px;
+    max-width: calc(100% - 26px);
+  }
+.pk-meet-scope .name-badge{
+    width: 94% !important;
+    margin-top: -2px;
+    padding: 11px 12px 12px;
+    border-radius: 0 0 13px 13px;
+  }}
+/* V8: larger connected portrait and matching nameplate */
+@media (min-width: 1021px){.pk-meet-scope .meet-card,.pk-meet-scope .portrait-side{
+    min-height: 700px;
+  }
+.pk-meet-scope .portrait-stack{
+    top: 6px;
+    width: 430px;
+    max-width: calc(100% - 34px);
+  }
+.pk-meet-scope .name-badge{
+    width: 100% !important;
+    margin-top: -2px;
+    padding: 17px 22px 18px;
+  }
+.pk-meet-scope .name-badge strong{
+    font-size: 1.08rem;
+  }
+.pk-meet-scope .name-badge span{
+    max-width: 390px;
+    font-size: 0.65rem;
+  }}
+@media (max-width: 1020px) and (min-width: 721px){.pk-meet-scope .portrait-side{
+    min-height: 665px;
+  }
+.pk-meet-scope .portrait-stack{
+    width: 395px;
+  }
+.pk-meet-scope .name-badge{
+    width: 100% !important;
+  }}
+@media (max-width: 720px){.pk-meet-scope .portrait-stack{
+    width: 278px;
+  }
+.pk-meet-scope .name-badge{
+    width: 100% !important;
+  }}
+/* V9: slightly larger introduction and Paul biography copy */
+.pk-meet-scope .section-heading p{
+  font-size: 1.18rem;
+  line-height: 1.76;
+}
+.pk-meet-scope .content-side > p{
+  font-size: 1.09rem;
+  line-height: 1.72;
+}
+@media (max-width: 720px){.pk-meet-scope .section-heading p{
+    font-size: 0.90rem;
+    line-height: 1.62;
+  }
+.pk-meet-scope .content-side > p{
+    font-size: 0.86rem;
+    line-height: 1.58;
+  }}
+/* V10: Paul King's promise continues directly beneath the statistics */
+.pk-meet-scope .promise-panel{
+  margin-top: 24px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(46,28,18,.09);
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(73,39,20,.10);
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 520ms 180ms ease,
+    transform 620ms 180ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-meet-scope .meet-card.is-visible .promise-panel{
+  opacity: 1;
+  transform: translateY(0);
+}
+.pk-meet-scope .promise-quote{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr) auto;
+  gap: 14px;
+  align-items: center;
+  min-height: 92px;
+  padding: 21px 25px;
+  color: #ffffff;
+  background: linear-gradient(135deg,#ff6600,var(--orange) 58%,#dd4500);
+}
+.pk-meet-scope .promise-mark{
+  align-self: start;
+  color: rgba(255,255,255,.34);
+  font-family: Georgia, serif;
+  font-size: 3.9rem;
+  line-height: .8;
+}
+.pk-meet-scope .promise-quote p{
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 780;
+  line-height: 1.45;
+  letter-spacing: -.018em;
+}
+.pk-meet-scope .promise-signature{
+  white-space: nowrap;
+  color: #fff0be;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+.pk-meet-scope .promise-points{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.pk-meet-scope .promise-point{
+  position: relative;
+  min-height: 132px;
+  display: grid;
+  grid-template-columns: 38px minmax(0,1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 23px 20px 22px;
+}
+.pk-meet-scope .promise-point + .promise-point{
+  border-left: 1px solid rgba(46,28,18,.09);
+}
+.pk-meet-scope .promise-number{
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: var(--orange);
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(247,87,0,.18);
+  font-size: .65rem;
+  font-weight: 950;
+  letter-spacing: .04em;
+}
+.pk-meet-scope .promise-point strong,.pk-meet-scope .promise-point p{
+  display: block;
+}
+.pk-meet-scope .promise-point strong{
+  margin: 2px 0 7px;
+  font-size: .92rem;
+  letter-spacing: -.018em;
+}
+.pk-meet-scope .promise-point p{
+  margin: 0;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.46;
+}
+@media (min-width: 1021px){.pk-meet-scope .meet-card,.pk-meet-scope .portrait-side{
+    min-height: 930px;
+  }
+.pk-meet-scope .content-side{
+    justify-content: flex-start;
+    padding-top: 58px;
+  }}
+@media (max-width: 1020px){.pk-meet-scope .promise-quote{
+    grid-template-columns: auto minmax(0,1fr);
+  }
+.pk-meet-scope .promise-signature{
+    grid-column: 2;
+    justify-self: start;
+  }}
+@media (max-width: 720px){.pk-meet-scope .promise-panel{
+    margin-top: 18px;
+    border-radius: 16px;
+  }
+.pk-meet-scope .promise-quote{
+    grid-template-columns: 30px minmax(0,1fr);
+    gap: 9px;
+    min-height: 0;
+    padding: 17px 15px 16px;
+  }
+.pk-meet-scope .promise-mark{
+    font-size: 3rem;
+  }
+.pk-meet-scope .promise-quote p{
+    font-size: .84rem;
+    line-height: 1.43;
+  }
+.pk-meet-scope .promise-signature{
+    grid-column: 2;
+    font-size: .63rem;
+  }
+.pk-meet-scope .promise-points{
+    grid-template-columns: 1fr;
+  }
+.pk-meet-scope .promise-point{
+    min-height: 0;
+    grid-template-columns: 31px minmax(0,1fr);
+    gap: 10px;
+    padding: 15px 14px;
+  }
+.pk-meet-scope .promise-point + .promise-point{
+    border-top: 1px solid rgba(46,28,18,.09);
+    border-left: 0;
+  }
+.pk-meet-scope .promise-number{
+    width: 29px;
+    height: 29px;
+    font-size: .56rem;
+  }
+.pk-meet-scope .promise-point strong{
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-size: .82rem;
+  }
+.pk-meet-scope .promise-point p{
+    font-size: .66rem;
+    line-height: 1.4;
+  }}
+/* V12: centre the promise sentence and strengthen 01–03 */
+@media (min-width: 1021px){.pk-meet-scope .promise-quote{
+    grid-template-columns: 1fr auto 1fr;
+  }
+.pk-meet-scope .promise-mark{
+    justify-self: start;
+  }
+.pk-meet-scope .promise-quote p{
+    justify-self: center;
+    max-width: 980px;
+    text-align: center;
+  }
+.pk-meet-scope .promise-signature{
+    justify-self: end;
+  }}
+.pk-meet-scope .promise-number{
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: var(--orange);
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(247,87,0,.22);
+  font-size: 1.45rem;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+@media (max-width: 720px){.pk-meet-scope .promise-number{
+    width: 46px;
+    height: 46px;
+    font-size: 1rem;
+  }}
+/* V13: larger promise statement and one shared white box for all three promises */
+.pk-meet-scope .promise-quote p{
+  font-size: 1.62rem;
+  line-height: 1.38;
+  font-weight: 820;
+}
+.pk-meet-scope .promise-points{
+  margin-top: 22px;
+  padding-top: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(46,28,18,.09);
+  border-radius: 22px;
+  box-shadow: 0 20px 44px rgba(73,39,20,.11);
+}
+.pk-meet-scope .promise-point{
+  min-height: 176px;
+  padding: 36px 34px 31px;
+}
+.pk-meet-scope .promise-point + .promise-point{
+  border-left: 1px solid rgba(46,28,18,.10);
+}
+@media (max-width: 1020px){.pk-meet-scope .promise-quote p{
+    font-size: 1.38rem;
+  }}
+@media (max-width: 720px){.pk-meet-scope .promise-quote p{
+    font-size: 1rem;
+    line-height: 1.42;
+  }
+.pk-meet-scope .promise-points{
+    margin-top: 15px;
+    border-radius: 16px;
+  }
+.pk-meet-scope .promise-point{
+    min-height: 0;
+    padding: 20px 15px 19px;
+  }
+.pk-meet-scope .promise-point + .promise-point{
+    border-top: 1px solid rgba(46,28,18,.10);
+    border-left: 0;
+  }}
+/* V14: brighter promise numbers and a much larger central statement */
+.pk-meet-scope .promise-quote{
+  min-height: 150px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.pk-meet-scope .promise-quote p{
+  max-width: 1120px;
+  font-size: 2.08rem;
+  line-height: 1.26;
+  font-weight: 850;
+  letter-spacing: -.035em;
+}
+.pk-meet-scope .promise-number{
+  width: 76px;
+  height: 76px;
+  color: #ffffff;
+  background: #ff5a00;
+  box-shadow:
+    0 14px 28px rgba(255,90,0,.30),
+    inset 0 1px 0 rgba(255,255,255,.28);
+  font-size: 1.82rem;
+  font-weight: 950;
+}
+@media (max-width: 1020px){.pk-meet-scope .promise-quote p{
+    font-size: 1.70rem;
+  }
+.pk-meet-scope .promise-number{
+    width: 70px;
+    height: 70px;
+    font-size: 1.62rem;
+  }}
+@media (max-width: 720px){.pk-meet-scope .promise-quote{
+    min-height: 0;
+    padding-top: 24px;
+    padding-bottom: 23px;
+  }
+.pk-meet-scope .promise-quote p{
+    font-size: 1.18rem;
+    line-height: 1.34;
+    letter-spacing: -.025em;
+  }
+.pk-meet-scope .promise-number{
+    width: 50px;
+    height: 50px;
+    font-size: 1.18rem;
+  }}
+@media (prefers-reduced-motion:reduce){.pk-meet-scope *,.pk-meet-scope *::before,.pk-meet-scope *::after{
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+.pk-meet-scope .speech-bubble,.pk-meet-scope .promise-panel{
+    opacity:1!important;
+    transform:none!important;
+  }}
+/* V11: full-width promise band outside the Paul card */
+.pk-meet-scope .promise-panel{
+  width: 100%;
+  margin: 58px 0 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 520ms ease,
+    transform 620ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-meet-scope .promise-panel.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+.pk-meet-scope .promise-quote{
+  min-height: 118px;
+  grid-template-columns: auto minmax(0,1fr) auto;
+  gap: 20px;
+  padding: 29px 42px;
+  border-radius: 22px;
+  box-shadow: 0 22px 44px rgba(247,87,0,.20);
+}
+.pk-meet-scope .promise-mark{
+  font-size: 4.8rem;
+}
+.pk-meet-scope .promise-quote p{
+  max-width: 890px;
+  font-size: 1.34rem;
+  line-height: 1.44;
+}
+.pk-meet-scope .promise-signature{
+  font-size: .86rem;
+}
+.pk-meet-scope .promise-points{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  margin-top: 0;
+  padding-top: 12px;
+  background: transparent;
+}
+.pk-meet-scope .promise-point{
+  min-height: 174px;
+  grid-template-columns: 76px minmax(0,1fr);
+  gap: 17px;
+  padding: 38px 36px 28px;
+  background: transparent;
+}
+.pk-meet-scope .promise-point + .promise-point{
+  border-left: 1px solid rgba(46,28,18,.13);
+}
+.pk-meet-scope .promise-number{
+  width: auto;
+  height: auto;
+  display: block;
+  color: rgba(247,87,0,.17);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 3.45rem;
+  line-height: .9;
+  letter-spacing: -.08em;
+}
+.pk-meet-scope .promise-point strong{
+  margin: 1px 0 9px;
+  font-size: 1.12rem;
+}
+.pk-meet-scope .promise-point p{
+  max-width: 330px;
+  font-size: .83rem;
+  line-height: 1.54;
+}
+@media (min-width: 1021px){.pk-meet-scope .meet-card,.pk-meet-scope .portrait-side{
+    min-height: 700px;
+  }
+.pk-meet-scope .content-side{
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }}
+@media (max-width: 1020px){.pk-meet-scope .promise-panel{
+    margin-top: 44px;
+  }
+.pk-meet-scope .promise-quote{
+    grid-template-columns: auto minmax(0,1fr);
+  }
+.pk-meet-scope .promise-signature{
+    grid-column: 2;
+  }}
+@media (max-width: 720px){.pk-meet-scope .promise-panel{
+    margin-top: 34px;
+  }
+.pk-meet-scope .promise-quote{
+    grid-template-columns: 29px minmax(0,1fr);
+    gap: 9px;
+    min-height: 0;
+    padding: 20px 16px 19px;
+    border-radius: 16px;
+  }
+.pk-meet-scope .promise-mark{
+    font-size: 3.2rem;
+  }
+.pk-meet-scope .promise-quote p{
+    font-size: .91rem;
+    line-height: 1.44;
+  }
+.pk-meet-scope .promise-signature{
+    grid-column: 2;
+    font-size: .64rem;
+  }
+.pk-meet-scope .promise-points{
+    grid-template-columns: 1fr;
+    padding-top: 8px;
+  }
+.pk-meet-scope .promise-point{
+    min-height: 0;
+    grid-template-columns: 53px minmax(0,1fr);
+    gap: 11px;
+    padding: 22px 12px 20px;
+  }
+.pk-meet-scope .promise-point + .promise-point{
+    border-top: 1px solid rgba(46,28,18,.12);
+    border-left: 0;
+  }
+.pk-meet-scope .promise-number{
+    font-size: 2.45rem;
+  }
+.pk-meet-scope .promise-point strong{
+    margin-bottom: 6px;
+    font-size: .89rem;
+  }
+.pk-meet-scope .promise-point p{
+    max-width: none;
+    font-size: .70rem;
+    line-height: 1.46;
+  }}
+/* V15 FINAL OVERRIDE — intentionally last so earlier rules cannot override it */
+@media (min-width: 1021px){.pk-meet-scope .promise-quote{
+    min-height: 190px !important;
+    padding: 42px 48px !important;
+  }
+.pk-meet-scope .promise-quote p{
+    width: 100% !important;
+    max-width: 1250px !important;
+    margin-inline: auto !important;
+    font-size: 2.65rem !important;
+    line-height: 1.18 !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.045em !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-number{
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    color: #ff5a00 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 5rem !important;
+    line-height: .82 !important;
+    font-weight: 950 !important;
+    letter-spacing: -0.08em !important;
+  }
+.pk-meet-scope .promise-point{
+    grid-template-columns: 102px minmax(0,1fr) !important;
+    gap: 22px !important;
+  }}
+@media (max-width: 1020px) and (min-width: 721px){.pk-meet-scope .promise-quote p{
+    font-size: 2rem !important;
+    line-height: 1.22 !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-number{
+    width: auto !important;
+    height: auto !important;
+    color: #ff5a00 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 4rem !important;
+    line-height: .85 !important;
+    font-weight: 950 !important;
+  }}
+@media (max-width: 720px){.pk-meet-scope .promise-quote p{
+    font-size: 1.34rem !important;
+    line-height: 1.28 !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-number{
+    width: auto !important;
+    height: auto !important;
+    color: #ff5a00 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 2.8rem !important;
+    line-height: .86 !important;
+    font-weight: 950 !important;
+  }}
+/* V16: enlarge only the Paul King signature in the orange promise box */
+.pk-meet-scope .promise-signature{
+  font-size: 1.12rem !important;
+  font-weight: 950 !important;
+}
+@media (max-width: 1020px){.pk-meet-scope .promise-signature{
+    font-size: .92rem !important;
+  }}
+@media (max-width: 720px){.pk-meet-scope .promise-signature{
+    font-size: .76rem !important;
+  }}
+/* V17: connected full-service legal section */
+.pk-meet-scope .legal-services{
+  position: relative;
+  width: 100%;
+  padding: 18px 0 96px;
+}
+.pk-meet-scope .services-connector{
+  position: relative;
+  width: 100%;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.pk-meet-scope .services-connector::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 76px;
+  background: linear-gradient(to bottom, rgba(247,87,0,.65), rgba(247,87,0,.08));
+}
+.pk-meet-scope .services-connector span{
+  position: absolute;
+  bottom: 5px;
+  width: 11px;
+  height: 11px;
+  border: 3px solid var(--orange);
+  border-radius: 50%;
+  background: #fff8f0;
+  box-shadow: 0 0 0 8px rgba(247,87,0,.08);
+}
+.pk-meet-scope .services-shell{
+  display: grid;
+  grid-template-columns: minmax(300px,.82fr) minmax(520px,1.18fr);
+  gap: 62px;
+  align-items: start;
+  padding: 58px;
+  background:
+    radial-gradient(circle at 7% 12%, rgba(247,87,0,.09), transparent 22%),
+    linear-gradient(135deg,#fffaf4 0%,#ffffff 50%,#fff7ef 100%);
+  border: 1px solid rgba(46,28,18,.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 58px rgba(73,39,20,.10);
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 560ms ease,
+    transform 700ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-meet-scope .legal-services.is-visible .services-shell{
+  opacity: 1;
+  transform: translateY(0);
+}
+.pk-meet-scope .services-intro{
+  position: sticky;
+  top: 36px;
+}
+.pk-meet-scope .services-eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+  color: var(--orange);
+  font-size: .73rem;
+  font-weight: 950;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.pk-meet-scope .services-eyebrow::before{
+  content: "";
+  width: 27px;
+  height: 2px;
+  background: var(--orange);
+}
+.pk-meet-scope .services-intro h2{
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2.3rem,4vw,4.35rem);
+  line-height: .98;
+  letter-spacing: -.058em;
+}
+.pk-meet-scope .services-intro h2 span{
+  display: block;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 8px 13px 10px;
+  color: #ffffff;
+  background: var(--orange);
+  border-radius: 9px;
+  box-shadow: 0 12px 26px rgba(247,87,0,.18);
+}
+.pk-meet-scope .services-intro > p{
+  max-width: 590px;
+  margin: 29px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+.pk-meet-scope .services-note{
+  display: grid;
+  grid-template-columns: 38px minmax(0,1fr);
+  gap: 13px;
+  align-items: center;
+  margin-top: 34px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(46,28,18,.12);
+}
+.pk-meet-scope .services-note-icon{
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  background: var(--orange);
+  border-radius: 50%;
+  font-size: .93rem;
+  font-weight: 950;
+}
+.pk-meet-scope .services-note p{
+  margin: 0;
+  color: var(--text);
+  font-size: .82rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+.pk-meet-scope .services-list{
+  border-top: 1px solid rgba(46,28,18,.15);
+}
+.pk-meet-scope .service-row{
+  border-bottom: 1px solid rgba(46,28,18,.15);
+  transition: background 240ms ease;
+}
+.pk-meet-scope .service-row:hover,.pk-meet-scope .service-row.is-open{
+  background: rgba(247,87,0,.045);
+}
+.pk-meet-scope .service-toggle{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60px minmax(0,1fr) 46px;
+  gap: 18px;
+  align-items: center;
+  padding: 27px 18px 25px;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+}
+.pk-meet-scope .service-index{
+  color: var(--orange);
+  font-size: .78rem;
+  font-weight: 950;
+  letter-spacing: .08em;
+}
+.pk-meet-scope .service-title{
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: -.025em;
+}
+.pk-meet-scope .service-arrow{
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  justify-self: end;
+  color: var(--orange);
+  border: 1px solid rgba(247,87,0,.28);
+  border-radius: 50%;
+  font-size: 1.05rem;
+  transition:
+    color 220ms ease,
+    background 220ms ease,
+    transform 280ms ease;
+}
+.pk-meet-scope .service-row:hover .service-arrow,.pk-meet-scope .service-row.is-open .service-arrow{
+  color: #ffffff;
+  background: var(--orange);
+}
+.pk-meet-scope .service-row.is-open .service-arrow{
+  transform: rotate(90deg);
+}
+.pk-meet-scope .service-detail{
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 340ms ease,
+    opacity 260ms ease;
+}
+.pk-meet-scope .service-detail > p{
+  overflow: hidden;
+}
+.pk-meet-scope .service-row.is-open .service-detail{
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.pk-meet-scope .service-detail p{
+  max-width: 620px;
+  margin: 0;
+  padding: 0 66px 27px 96px;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.62;
+}
+@media (max-width: 1020px){.pk-meet-scope .legal-services{
+    padding-bottom: 72px;
+  }
+.pk-meet-scope .services-shell{
+    grid-template-columns: 1fr;
+    gap: 46px;
+    padding: 44px;
+  }
+.pk-meet-scope .services-intro{
+    position: static;
+  }
+.pk-meet-scope .services-intro h2{
+    max-width: 760px;
+  }
+.pk-meet-scope .services-intro > p{
+    max-width: 760px;
+  }}
+@media (max-width: 720px){.pk-meet-scope .legal-services{
+    padding-top: 4px;
+    padding-bottom: 52px;
+  }
+.pk-meet-scope .services-connector{
+    height: 70px;
+  }
+.pk-meet-scope .services-connector::before{
+    height: 52px;
+  }
+.pk-meet-scope .services-shell{
+    gap: 34px;
+    padding: 27px 17px 22px;
+    border-radius: 20px;
+  }
+.pk-meet-scope .services-eyebrow{
+    margin-bottom: 13px;
+    font-size: .59rem;
+  }
+.pk-meet-scope .services-intro h2{
+    font-size: 2.18rem;
+    line-height: 1.02;
+  }
+.pk-meet-scope .services-intro h2 span{
+    margin-top: 8px;
+    padding: 6px 9px 7px;
+    border-radius: 7px;
+  }
+.pk-meet-scope .services-intro > p{
+    margin-top: 21px;
+    font-size: .87rem;
+    line-height: 1.58;
+  }
+.pk-meet-scope .services-note{
+    grid-template-columns: 32px minmax(0,1fr);
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+.pk-meet-scope .services-note-icon{
+    width: 32px;
+    height: 32px;
+    font-size: .78rem;
+  }
+.pk-meet-scope .services-note p{
+    font-size: .71rem;
+  }
+.pk-meet-scope .service-toggle{
+    grid-template-columns: 37px minmax(0,1fr) 34px;
+    gap: 8px;
+    padding: 20px 4px 18px;
+  }
+.pk-meet-scope .service-index{
+    font-size: .63rem;
+  }
+.pk-meet-scope .service-title{
+    font-size: 1rem;
+    line-height: 1.22;
+  }
+.pk-meet-scope .service-arrow{
+    width: 32px;
+    height: 32px;
+    font-size: .86rem;
+  }
+.pk-meet-scope .service-detail p{
+    padding: 0 8px 20px 45px;
+    font-size: .75rem;
+    line-height: 1.52;
+  }}
+@media (prefers-reduced-motion: reduce){.pk-meet-scope .services-shell,.pk-meet-scope .service-arrow,.pk-meet-scope .service-detail{
+    transition: none !important;
+  }
+.pk-meet-scope .services-shell{
+    opacity: 1 !important;
+    transform: none !important;
+  }}
+/* V19: simplified static legal services — no illustration, no clicking */
+.pk-meet-scope .services-shell{
+  grid-template-columns: minmax(330px,.82fr) minmax(560px,1.18fr);
+  gap: 58px;
+  min-height: 0;
+}
+.pk-meet-scope .services-list{
+  display: grid;
+  gap: 0;
+}
+.pk-meet-scope .service-row{
+  background: transparent;
+}
+.pk-meet-scope .service-row:hover,.pk-meet-scope .service-row.is-open{
+  background: rgba(247,87,0,.035);
+}
+.pk-meet-scope .service-toggle{
+  grid-template-columns: 58px minmax(0,1fr);
+  gap: 18px;
+  min-height: 0;
+  padding: 24px 18px 10px;
+  cursor: default;
+}
+.pk-meet-scope .service-title{
+  font-size: 1.28rem;
+}
+.pk-meet-scope .service-detail{
+  display: block;
+  opacity: 1;
+}
+.pk-meet-scope .service-detail p{
+  max-width: 650px;
+  margin: 0;
+  padding: 0 28px 24px 94px;
+  color: var(--muted);
+  font-size: .91rem;
+  line-height: 1.6;
+}
+@media (max-width: 1020px){.pk-meet-scope .services-shell{
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }}
+@media (max-width: 720px){.pk-meet-scope .service-toggle{
+    grid-template-columns: 34px minmax(0,1fr);
+    gap: 9px;
+    padding: 18px 4px 8px;
+  }
+.pk-meet-scope .service-title{
+    font-size: 1rem;
+  }
+.pk-meet-scope .service-detail p{
+    padding: 0 6px 18px 43px;
+    font-size: .76rem;
+    line-height: 1.5;
+  }}
+/* V20: service thumbnails and stronger, centred left column */
+.pk-meet-scope .services-shell{
+  grid-template-columns: minmax(390px,.9fr) minmax(560px,1.1fr);
+  align-items: stretch;
+}
+.pk-meet-scope .services-intro{
+  position: static;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  padding: 18px 0;
+}
+.pk-meet-scope .services-eyebrow{
+  font-size: .82rem;
+}
+.pk-meet-scope .services-intro h2{
+  max-width: 620px;
+  font-size: clamp(3.25rem,4.75vw,5.35rem);
+  line-height: .96;
+}
+.pk-meet-scope .services-intro h2 span{
+  margin-top: 13px;
+  padding: 10px 15px 12px;
+}
+.pk-meet-scope .services-intro > p{
+  max-width: 620px;
+  margin-top: 34px;
+  font-size: 1.22rem;
+  line-height: 1.72;
+}
+.pk-meet-scope .service-toggle{
+  grid-template-columns: 72px minmax(0,1fr);
+  gap: 22px;
+  align-items: center;
+}
+.pk-meet-scope .service-thumb{
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: var(--orange);
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.95),rgba(255,235,221,.94));
+  border: 1px solid rgba(247,87,0,.16);
+  border-radius: 17px;
+  box-shadow:
+    0 10px 22px rgba(109,54,25,.10),
+    inset 0 1px 0 rgba(255,255,255,.88);
+}
+.pk-meet-scope .service-thumb svg{
+  width: 38px;
+  height: 38px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pk-meet-scope .service-detail p{
+  padding-left: 112px;
+}
+@media (max-width: 1020px){.pk-meet-scope .services-shell{
+    grid-template-columns: 1fr;
+  }
+.pk-meet-scope .services-intro{
+    min-height: 0;
+    padding: 0;
+  }
+.pk-meet-scope .services-intro h2{
+    max-width: 760px;
+    font-size: clamp(3rem,7vw,4.6rem);
+  }
+.pk-meet-scope .services-intro > p{
+    max-width: 760px;
+  }}
+@media (max-width: 720px){.pk-meet-scope .services-intro h2{
+    font-size: 2.45rem;
+  }
+.pk-meet-scope .services-intro > p{
+    margin-top: 23px;
+    font-size: .92rem;
+    line-height: 1.58;
+  }
+.pk-meet-scope .service-toggle{
+    grid-template-columns: 48px minmax(0,1fr);
+    gap: 11px;
+  }
+.pk-meet-scope .service-thumb{
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+  }
+.pk-meet-scope .service-thumb svg{
+    width: 28px;
+    height: 28px;
+  }
+.pk-meet-scope .service-detail p{
+    padding-left: 59px;
+  }}
+/* V21 FINAL: remove the dead vertical space and balance both sides */
+.pk-meet-scope .services-shell{
+  grid-template-columns: minmax(390px, .88fr) minmax(650px, 1.12fr) !important;
+  gap: 50px !important;
+  align-items: center !important;
+  min-height: 0 !important;
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+.pk-meet-scope .services-intro{
+  position: static !important;
+  min-height: 0 !important;
+  align-self: center !important;
+  justify-content: flex-start !important;
+  padding: 0 !important;
+}
+.pk-meet-scope .services-intro h2{
+  max-width: 590px !important;
+  font-size: clamp(3.15rem, 4.35vw, 4.85rem) !important;
+  line-height: .96 !important;
+}
+.pk-meet-scope .services-intro > p{
+  max-width: 570px !important;
+  margin-top: 29px !important;
+  font-size: 1.12rem !important;
+  line-height: 1.65 !important;
+}
+.pk-meet-scope .services-list{
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  align-content: center !important;
+  border-top: 0 !important;
+}
+.pk-meet-scope .service-row{
+  min-height: 205px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  background: rgba(255,255,255,.72) !important;
+  border: 1px solid rgba(46,28,18,.09) !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 28px rgba(73,39,20,.07) !important;
+}
+.pk-meet-scope .service-row:hover,.pk-meet-scope .service-row.is-open{
+  background: #ffffff !important;
+  transform: translateY(-2px);
+}
+.pk-meet-scope .service-toggle{
+  grid-template-columns: 58px minmax(0,1fr) !important;
+  gap: 15px !important;
+  min-height: 0 !important;
+  padding: 22px 20px 10px !important;
+}
+.pk-meet-scope .service-thumb{
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 15px !important;
+}
+.pk-meet-scope .service-thumb svg{
+  width: 32px !important;
+  height: 32px !important;
+}
+.pk-meet-scope .service-title{
+  font-size: 1.03rem !important;
+  line-height: 1.18 !important;
+}
+.pk-meet-scope .service-detail{
+  display: block !important;
+  opacity: 1 !important;
+}
+.pk-meet-scope .service-detail p{
+  max-width: none !important;
+  padding: 4px 20px 22px 93px !important;
+  font-size: .78rem !important;
+  line-height: 1.52 !important;
+}
+@media (max-width: 1180px){.pk-meet-scope .services-shell{
+    grid-template-columns: 1fr !important;
+    gap: 38px !important;
+    align-items: start !important;
+  }
+.pk-meet-scope .services-intro{
+    align-self: start !important;
+  }
+.pk-meet-scope .services-intro h2,.pk-meet-scope .services-intro > p{
+    max-width: 760px !important;
+  }}
+@media (max-width: 760px){.pk-meet-scope .services-shell{
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+.pk-meet-scope .services-list{
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+.pk-meet-scope .service-row{
+    min-height: 0 !important;
+  }
+.pk-meet-scope .service-toggle{
+    grid-template-columns: 46px minmax(0,1fr) !important;
+    gap: 10px !important;
+    padding: 17px 14px 8px !important;
+  }
+.pk-meet-scope .service-thumb{
+    width: 42px !important;
+    height: 42px !important;
+  }
+.pk-meet-scope .service-thumb svg{
+    width: 26px !important;
+    height: 26px !important;
+  }
+.pk-meet-scope .service-detail p{
+    padding: 2px 14px 17px 70px !important;
+    font-size: .72rem !important;
+  }}
+/* V22: slightly larger text across all six legal services */
+.pk-meet-scope .service-title{
+  font-size: 1.18rem !important;
+  line-height: 1.2 !important;
+}
+.pk-meet-scope .service-detail p{
+  font-size: .88rem !important;
+  line-height: 1.56 !important;
+}
+@media (max-width: 760px){.pk-meet-scope .service-title{
+    font-size: 1.05rem !important;
+  }
+.pk-meet-scope .service-detail p{
+    font-size: .78rem !important;
+    line-height: 1.52 !important;
+  }}
+/* V23 MOBILE ONLY: portrait, USP alignment, centred promise, compact legal heading */
+@media (max-width: 720px){/* 1. Keep Paul's complete connected nameplate visible */
+.pk-meet-scope .portrait-side{
+    min-height: 505px !important;
+    overflow: hidden !important;
+  }
+.pk-meet-scope .portrait-stack{
+    top: 2px !important;
+    width: 282px !important;
+    max-width: calc(100% - 24px) !important;
+  }
+.pk-meet-scope .name-badge{
+    width: 100% !important;
+    margin-top: -2px !important;
+    padding: 12px 13px 13px !important;
+    border-radius: 0 0 14px 14px !important;
+  }
+.pk-meet-scope .name-badge strong{
+    font-size: .92rem !important;
+    line-height: 1.15 !important;
+  }
+.pk-meet-scope .name-badge span{
+    display: block !important;
+    max-width: 245px !important;
+    margin-inline: auto !important;
+    font-size: .52rem !important;
+    line-height: 1.35 !important;
+    letter-spacing: .07em !important;
+  }
+/* 2. Compact, consistently aligned USP rows */
+.pk-meet-scope .stats{
+    gap: 10px !important;
+    margin-top: 19px !important;
+  }
+.pk-meet-scope .stat{
+    min-height: 88px !important;
+    grid-template-columns: 136px minmax(0, 1fr) !important;
+    gap: 10px !important;
+    padding: 14px 17px !important;
+    align-items: center !important;
+    border-radius: 18px !important;
+  }
+.pk-meet-scope .stat strong{
+    margin: 0 !important;
+    white-space: nowrap !important;
+    font-size: 1.58rem !important;
+    line-height: 1 !important;
+    text-align: left !important;
+  }
+.pk-meet-scope .stat span{
+    font-size: .74rem !important;
+    line-height: 1.35 !important;
+    text-align: left !important;
+  }
+/* 3. Fully centre the quote, quotation mark and Paul King signature */
+.pk-meet-scope .promise-quote{
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0 !important;
+    min-height: 0 !important;
+    padding: 62px 20px 27px !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-mark{
+    position: absolute !important;
+    top: 17px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    font-size: 3.25rem !important;
+    line-height: 1 !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-quote p{
+    width: 100% !important;
+    max-width: 620px !important;
+    margin: 0 auto !important;
+    font-size: 1.22rem !important;
+    line-height: 1.31 !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-signature{
+    display: block !important;
+    width: 100% !important;
+    margin: 17px auto 0 !important;
+    grid-column: auto !important;
+    justify-self: auto !important;
+    font-size: .88rem !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+/* 4. Reduce the oversized mobile legal-services introduction */
+.pk-meet-scope .legal-services{
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
+  }
+.pk-meet-scope .services-connector{
+    height: 54px !important;
+  }
+.pk-meet-scope .services-connector::before{
+    height: 38px !important;
+  }
+.pk-meet-scope .services-shell{
+    gap: 27px !important;
+    padding: 25px 14px 22px !important;
+  }
+.pk-meet-scope .services-eyebrow{
+    margin-bottom: 14px !important;
+    font-size: .56rem !important;
+    letter-spacing: .12em !important;
+  }
+.pk-meet-scope .services-intro h2{
+    max-width: 100% !important;
+    font-size: 2.12rem !important;
+    line-height: 1.01 !important;
+    letter-spacing: -.05em !important;
+  }
+.pk-meet-scope .services-intro h2 span{
+    width: 100% !important;
+    margin-top: 9px !important;
+    padding: 10px 12px 11px !important;
+    font-size: .76em !important;
+    line-height: 1.04 !important;
+    border-radius: 10px !important;
+  }
+.pk-meet-scope .services-intro > p{
+    margin-top: 23px !important;
+    font-size: .86rem !important;
+    line-height: 1.55 !important;
+  }}
+@media (max-width: 370px){.pk-meet-scope .stat{
+    grid-template-columns: 120px minmax(0, 1fr) !important;
+    padding-inline: 14px !important;
+  }
+.pk-meet-scope .stat strong{
+    font-size: 1.4rem !important;
+  }
+.pk-meet-scope .promise-quote p{
+    font-size: 1.1rem !important;
+  }
+.pk-meet-scope .services-intro h2{
+    font-size: 1.95rem !important;
+  }}
+/* V24: connected British Passport Renewal feature beneath the six services */
+.pk-meet-scope .services-right{
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.pk-meet-scope .passport-renewal-feature{
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0,1.15fr) minmax(250px,.85fr);
+  gap: 28px;
+  align-items: center;
+  min-height: 248px;
+  margin-top: 0;
+  padding: 30px 32px;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 86% 20%,rgba(255,255,255,.19),transparent 18rem),
+    linear-gradient(135deg,#ff6700 0%,#f75700 56%,#db4000 100%);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 22px 42px rgba(247,87,0,.22);
+}
+.pk-meet-scope .passport-renewal-feature::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(255,255,255,.30);
+}
+.pk-meet-scope .services-list{
+  margin-bottom: 0 !important;
+}
+.pk-meet-scope .services-list .service-row:nth-last-child(-n/**/+2){
+  border-radius: 18px 18px 0 0 !important;
+}
+.pk-meet-scope .passport-renewal-copy{
+  position: relative;
+  z-index: 3;
+}
+.pk-meet-scope .passport-renewal-kicker{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+  color: #fff2bf;
+  font-size: .66rem;
+  font-weight: 950;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.pk-meet-scope .passport-renewal-kicker::before{
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+}
+.pk-meet-scope .passport-renewal-copy h3{
+  max-width: 520px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.85rem,2.6vw,3rem);
+  line-height: 1;
+  letter-spacing: -.045em;
+}
+.pk-meet-scope .passport-renewal-copy p{
+  max-width: 570px;
+  margin: 14px 0 0;
+  color: rgba(255,255,255,.86);
+  font-size: .86rem;
+  line-height: 1.55;
+}
+.pk-meet-scope .passport-renewal-button{
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 13px 17px;
+  color: var(--orange-dark);
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 12px 26px rgba(104,30,0,.18);
+  font-size: .78rem;
+  font-weight: 950;
+  text-decoration: none;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+.pk-meet-scope .passport-renewal-button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(104,30,0,.24);
+}
+.pk-meet-scope .passport-renewal-button span{
+  font-size: 1.08rem;
+  line-height: 1;
+}
+.pk-meet-scope .passport-renewal-animation{
+  position: relative;
+  z-index: 2;
+  min-height: 176px;
+  display: grid;
+  place-items: center;
+}
+.pk-meet-scope .passport-stage{
+  position: relative;
+  width: 270px;
+  height: 174px;
+}
+.pk-meet-scope .passport-card{
+  position: absolute;
+  top: 7px;
+  width: 118px;
+  margin: 0;
+  text-align: center;
+  transform-origin: 50% 90%;
+}
+.pk-meet-scope .passport-card img{
+  width: 100%;
+  height: 142px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 18px rgba(77,22,0,.24));
+}
+.pk-meet-scope .passport-card figcaption{
+  margin-top: 5px;
+  color: rgba(255,255,255,.75);
+  font-size: .52rem;
+  font-weight: 850;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.pk-meet-scope .passport-card-old{
+  left: 0;
+  animation: passportOldCycle 5.8s ease-in-out infinite;
+}
+.pk-meet-scope .passport-card-old img{
+  filter:
+    grayscale(.72)
+    saturate(.55)
+    brightness(.82)
+    drop-shadow(0 15px 18px rgba(77,22,0,.22));
+}
+.pk-meet-scope .passport-card-new{
+  right: 0;
+  animation: passportNewCycle 5.8s ease-in-out infinite;
+}
+.pk-meet-scope .passport-shine{
+  position: absolute;
+  top: 0;
+  bottom: 26px;
+  left: -38%;
+  z-index: 2;
+  width: 34%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255,255,255,.08) 35%,
+    rgba(255,255,255,.72) 50%,
+    rgba(255,255,255,.08) 65%,
+    transparent 100%
+  );
+  transform: skewX(-13deg);
+  animation: passportShine 5.8s ease-in-out infinite;
+}
+.pk-meet-scope .passport-renew-arrow{
+  position: absolute;
+  top: 59px;
+  left: 50%;
+  width: 56px;
+  transform: translateX(-50%);
+  color: #fff2bd;
+  animation: passportArrowPulse 5.8s ease-in-out infinite;
+}
+.pk-meet-scope .passport-renew-arrow svg{
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@keyframes passportOldCycle{0%,18%{
+    opacity: 1;
+    transform: translateX(10px) rotate(-2deg) scale(1);
+  }
+38%,78%{
+    opacity: .38;
+    transform: translateX(-10px) rotate(-7deg) scale(.94);
+  }
+100%{
+    opacity: 1;
+    transform: translateX(10px) rotate(-2deg) scale(1);
+  }}
+@keyframes passportNewCycle{0%,22%{
+    opacity: .28;
+    transform: translateX(12px) rotate(5deg) scale(.91);
+  }
+44%,82%{
+    opacity: 1;
+    transform: translateX(-5px) rotate(2deg) scale(1.04);
+  }
+100%{
+    opacity: .28;
+    transform: translateX(12px) rotate(5deg) scale(.91);
+  }}
+@keyframes passportArrowPulse{0%,18%{
+    opacity: .38;
+    transform: translateX(-50%) scaleX(.74);
+  }
+36%,70%{
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+  }
+100%{
+    opacity: .38;
+    transform: translateX(-50%) scaleX(.74);
+  }}
+@keyframes passportShine{0%,38%{
+    left: -38%;
+    opacity: 0;
+  }
+48%{
+    opacity: .9;
+  }
+64%{
+    left: 115%;
+    opacity: 0;
+  }
+100%{
+    left: 115%;
+    opacity: 0;
+  }}
+@media (max-width: 1180px){.pk-meet-scope .passport-renewal-feature{
+    grid-template-columns: minmax(0,1fr) 280px;
+  }}
+@media (max-width: 760px){.pk-meet-scope .services-list .service-row:nth-last-child(-n/**/+2){
+    border-radius: 18px !important;
+  }
+.pk-meet-scope .services-list .service-row:last-child{
+    border-radius: 18px 18px 0 0 !important;
+  }
+.pk-meet-scope .passport-renewal-feature{
+    grid-template-columns: 1fr;
+    gap: 17px;
+    min-height: 0;
+    padding: 24px 18px 20px;
+    border-radius: 0 0 18px 18px;
+  }
+.pk-meet-scope .passport-renewal-copy{
+    text-align: center;
+  }
+.pk-meet-scope .passport-renewal-kicker{
+    justify-content: center;
+    font-size: .54rem;
+  }
+.pk-meet-scope .passport-renewal-copy h3{
+    margin-inline: auto;
+    font-size: 2rem;
+  }
+.pk-meet-scope .passport-renewal-copy p{
+    margin-inline: auto;
+    font-size: .75rem;
+  }
+.pk-meet-scope .passport-renewal-button{
+    margin-top: 16px;
+    margin-inline: auto;
+    padding: 12px 15px;
+    font-size: .72rem;
+  }
+.pk-meet-scope .passport-renewal-animation{
+    min-height: 157px;
+  }
+.pk-meet-scope .passport-stage{
+    width: 248px;
+    height: 155px;
+  }
+.pk-meet-scope .passport-card{
+    width: 105px;
+  }
+.pk-meet-scope .passport-card img{
+    height: 126px;
+  }
+.pk-meet-scope .passport-renew-arrow{
+    top: 51px;
+    width: 48px;
+  }}
+@media (prefers-reduced-motion: reduce){.pk-meet-scope .passport-card-old,.pk-meet-scope .passport-card-new,.pk-meet-scope .passport-renew-arrow,.pk-meet-scope .passport-shine{
+    animation: none !important;
+  }
+.pk-meet-scope .passport-card-old{
+    opacity: .45;
+    transform: translateX(-6px) rotate(-6deg) scale(.95);
+  }
+.pk-meet-scope .passport-card-new{
+    opacity: 1;
+    transform: translateX(-4px) rotate(2deg) scale(1.03);
+  }
+.pk-meet-scope .passport-renew-arrow{
+    opacity: 1;
+    transform: translateX(-50%);
+  }}
+/* V25 FINAL: passport renewal panel sits OUTSIDE and attaches below */
+.pk-meet-scope .services-shell{
+  position: relative !important;
+  z-index: 2 !important;
+  border-radius: 28px 28px 0 0 !important;
+  box-shadow: 0 18px 42px rgba(73,39,20,.10) !important;
+}
+.pk-meet-scope .legal-services > .passport-renewal-feature{
+  position: relative !important;
+  z-index: 3 !important;
+  width: 100% !important;
+  margin: -1px 0 0 !important;
+  border-radius: 0 0 28px 28px !important;
+  box-shadow: 0 24px 48px rgba(247,87,0,.22) !important;
+}
+.pk-meet-scope .legal-services > .passport-renewal-feature::before{
+  display: none !important;
+}
+.pk-meet-scope .services-list .service-row:nth-last-child(-n/**/+2),.pk-meet-scope .services-list .service-row:last-child{
+  border-radius: 18px !important;
+}
+@media (max-width: 760px){.pk-meet-scope .services-shell{
+    border-radius: 20px 20px 0 0 !important;
+  }
+.pk-meet-scope .legal-services > .passport-renewal-feature{
+    border-radius: 0 0 20px 20px !important;
+  }}
+/* V26: larger renewal copy and much larger current/new passport visuals */
+.pk-meet-scope .passport-renewal-kicker{
+  font-size: .92rem !important;
+  line-height: 1.3 !important;
+}
+.pk-meet-scope .passport-renewal-copy p{
+  max-width: 650px !important;
+  font-size: 1.04rem !important;
+  line-height: 1.58 !important;
+}
+.pk-meet-scope .passport-renewal-feature{
+  grid-template-columns: minmax(0,1.08fr) minmax(410px,.92fr) !important;
+  min-height: 340px !important;
+}
+.pk-meet-scope .passport-renewal-animation{
+  min-height: 270px !important;
+}
+.pk-meet-scope .passport-stage{
+  width: 420px !important;
+  height: 270px !important;
+}
+.pk-meet-scope .passport-card{
+  top: 8px !important;
+  width: 176px !important;
+}
+.pk-meet-scope .passport-card-new img{
+  width: 100% !important;
+  height: 224px !important;
+  object-fit: contain !important;
+}
+.pk-meet-scope .simple-passport{
+  position: relative;
+  width: 100%;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 15px 19px;
+  overflow: hidden;
+  color: #d9b85e;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.08),transparent 28%),
+    linear-gradient(155deg,#25354b 0%,#172638 58%,#0f1b29 100%);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 7px 12px 12px 7px;
+  box-shadow:
+    inset -9px 0 12px rgba(0,0,0,.22),
+    inset 1px 0 0 rgba(255,255,255,.13),
+    0 18px 24px rgba(77,22,0,.22);
+}
+.pk-meet-scope .simple-passport::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,.018) 0 1px,
+      transparent 1px 4px
+    );
+  mix-blend-mode: screen;
+}
+.pk-meet-scope .simple-passport-top,.pk-meet-scope .simple-passport-bottom{
+  position: relative;
+  z-index: 2;
+  font-family: Georgia,serif;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.pk-meet-scope .simple-passport-top{
+  font-size: 1rem;
+}
+.pk-meet-scope .simple-passport-bottom{
+  font-size: .66rem;
+}
+.pk-meet-scope .simple-passport-emblem{
+  position: relative;
+  z-index: 2;
+  width: 96px;
+  height: 96px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .96;
+}
+.pk-meet-scope .passport-card figcaption{
+  margin-top: 8px !important;
+  font-size: .62rem !important;
+}
+.pk-meet-scope .passport-card-old{
+  left: 0 !important;
+}
+.pk-meet-scope .passport-card-new{
+  right: 0 !important;
+}
+.pk-meet-scope .passport-renew-arrow{
+  top: 92px !important;
+  width: 74px !important;
+}
+.pk-meet-scope .passport-shine{
+  bottom: 36px !important;
+}
+@media (max-width: 1180px){.pk-meet-scope .passport-renewal-feature{
+    grid-template-columns: minmax(0,1fr) 390px !important;
+  }
+.pk-meet-scope .passport-stage{
+    width: 380px !important;
+  }
+.pk-meet-scope .passport-card{
+    width: 160px !important;
+  }
+.pk-meet-scope .passport-card-new img,.pk-meet-scope .simple-passport{
+    height: 204px !important;
+  }}
+@media (max-width: 760px){.pk-meet-scope .passport-renewal-kicker{
+    font-size: .68rem !important;
+  }
+.pk-meet-scope .passport-renewal-copy p{
+    font-size: .86rem !important;
+  }
+.pk-meet-scope .passport-renewal-feature{
+    grid-template-columns: 1fr !important;
+    min-height: 0 !important;
+  }
+.pk-meet-scope .passport-renewal-animation{
+    min-height: 224px !important;
+  }
+.pk-meet-scope .passport-stage{
+    width: 318px !important;
+    max-width: 100% !important;
+    height: 218px !important;
+  }
+.pk-meet-scope .passport-card{
+    width: 136px !important;
+  }
+.pk-meet-scope .passport-card-new img,.pk-meet-scope .simple-passport{
+    height: 174px !important;
+  }
+.pk-meet-scope .simple-passport{
+    padding: 18px 11px 14px !important;
+  }
+.pk-meet-scope .simple-passport-emblem{
+    width: 72px !important;
+    height: 72px !important;
+  }
+.pk-meet-scope .simple-passport-top{
+    font-size: .78rem !important;
+  }
+.pk-meet-scope .simple-passport-bottom{
+    font-size: .52rem !important;
+  }
+.pk-meet-scope .passport-renew-arrow{
+    top: 70px !important;
+    width: 54px !important;
+  }
+.pk-meet-scope .passport-card figcaption{
+    font-size: .52rem !important;
+  }}
+/* V27: simple grey current-passport icon and exactly matched passport sizes */
+.pk-meet-scope .passport-card{
+  width: 190px !important;
+}
+.pk-meet-scope .simple-passport,.pk-meet-scope .passport-card-new img{
+  width: 190px !important;
+  height: 242px !important;
+  box-sizing: border-box !important;
+}
+.pk-meet-scope .simple-passport-grey{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 24px 16px 20px !important;
+  color: #686868 !important;
+  background:
+    linear-gradient(145deg,#efefef 0%,#d8d8d8 58%,#c4c4c4 100%) !important;
+  border: 1px solid rgba(0,0,0,.14) !important;
+  border-radius: 9px 14px 14px 9px !important;
+  box-shadow:
+    inset -9px 0 13px rgba(0,0,0,.10),
+    inset 1px 0 0 rgba(255,255,255,.75),
+    0 18px 24px rgba(77,22,0,.20) !important;
+}
+.pk-meet-scope .simple-passport-grey::after{
+  display: none !important;
+}
+.pk-meet-scope .grey-passport-title,.pk-meet-scope .grey-passport-label{
+  color: #666666;
+  font-weight: 900;
+  letter-spacing: .10em;
+}
+.pk-meet-scope .grey-passport-title{
+  font-size: 1rem;
+}
+.pk-meet-scope .grey-passport-label{
+  font-size: .60rem;
+}
+.pk-meet-scope .grey-passport-icon{
+  width: 112px;
+  height: 112px;
+  fill: none;
+  stroke: #777777;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pk-meet-scope .passport-card-new img{
+  display: block !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  filter: drop-shadow(0 18px 24px rgba(77,22,0,.26)) !important;
+}
+.pk-meet-scope .passport-stage{
+  width: 455px !important;
+  height: 292px !important;
+}
+.pk-meet-scope .passport-renew-animation{
+  min-height: 292px !important;
+}
+.pk-meet-scope .passport-renew-arrow{
+  top: 101px !important;
+}
+@media (max-width: 1180px){.pk-meet-scope .passport-card{
+    width: 174px !important;
+  }
+.pk-meet-scope .simple-passport,.pk-meet-scope .passport-card-new img{
+    width: 174px !important;
+    height: 222px !important;
+  }
+.pk-meet-scope .passport-stage{
+    width: 415px !important;
+    height: 270px !important;
+  }}
+@media (max-width: 760px){.pk-meet-scope .passport-card{
+    width: 138px !important;
+  }
+.pk-meet-scope .simple-passport,.pk-meet-scope .passport-card-new img{
+    width: 138px !important;
+    height: 176px !important;
+  }
+.pk-meet-scope .passport-stage{
+    width: 322px !important;
+    height: 220px !important;
+  }
+.pk-meet-scope .grey-passport-icon{
+    width: 82px !important;
+    height: 82px !important;
+  }
+.pk-meet-scope .grey-passport-title{
+    font-size: .76rem !important;
+  }
+.pk-meet-scope .grey-passport-label{
+    font-size: .48rem !important;
+  }}
+/* V28: renewed passport has the same visible dimensions as the grey passport */
+.pk-meet-scope .passport-card-new{
+  }
+.pk-meet-scope .passport-card-new img{
+  width: 190px !important;
+  height: 242px !important;
+  object-fit: fill !important;
+  object-position: center !important;
+}
+@media (max-width: 1180px){.pk-meet-scope .passport-card-new img{
+    width: 174px !important;
+    height: 222px !important;
+  }}
+@media (max-width: 760px){.pk-meet-scope .passport-card-new img{
+    width: 138px !important;
+    height: 176px !important;
+  }}
+/* V29: enlarge only the Order New Passport Today button */
+.pk-meet-scope .passport-renewal-button{
+  gap: 16px !important;
+  margin-top: 25px !important;
+  padding: 19px 28px !important;
+  font-size: 1.06rem !important;
+  font-weight: 950 !important;
+  box-shadow: 0 17px 34px rgba(104,30,0,.23) !important;
+}
+.pk-meet-scope .passport-renewal-button span{
+  font-size: 1.42rem !important;
+}
+@media (max-width: 760px){.pk-meet-scope .passport-renewal-button{
+    gap: 12px !important;
+    margin-top: 20px !important;
+    padding: 16px 22px !important;
+    font-size: .91rem !important;
+  }
+.pk-meet-scope .passport-renewal-button span{
+    font-size: 1.22rem !important;
+  }}
+/* V30 MOBILE ONLY: compact promise, centred promise labels, 2-column services */
+@media (max-width: 720px){/* Slightly larger quote inside a shorter orange box */
+.pk-meet-scope .promise-quote{
+    min-height: 0 !important;
+    padding: 46px 16px 20px !important;
+  }
+.pk-meet-scope .promise-mark{
+    top: 9px !important;
+    font-size: 2.75rem !important;
+  }
+.pk-meet-scope .promise-quote p{
+    max-width: 650px !important;
+    font-size: 1.32rem !important;
+    line-height: 1.27 !important;
+  }
+.pk-meet-scope .promise-signature{
+    margin-top: 12px !important;
+    font-size: .86rem !important;
+  }
+/* Keep only centred number + title */
+.pk-meet-scope .promise-points{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+.pk-meet-scope .promise-point{
+    min-height: 0 !important;
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 14px 12px !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .promise-point p{
+    display: none !important;
+  }
+.pk-meet-scope .promise-number{
+    width: auto !important;
+    height: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #ff5a00 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 1.72rem !important;
+    line-height: 1 !important;
+  }
+.pk-meet-scope .promise-number::after{
+    content: "—";
+    color: rgba(247,87,0,.48);
+    font-size: .95rem;
+    font-weight: 800;
+  }
+.pk-meet-scope .promise-point strong{
+    margin: 0 !important;
+    font-size: .92rem !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+/* Six services: two compact cards per row, icon + title only */
+.pk-meet-scope .services-list{
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    gap: 9px !important;
+  }
+.pk-meet-scope .service-row{
+    min-height: 118px !important;
+    display: flex !important;
+    align-items: stretch !important;
+    border-radius: 15px !important;
+  }
+.pk-meet-scope .service-toggle{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 9px !important;
+    padding: 14px 9px !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .service-thumb{
+    width: 43px !important;
+    height: 43px !important;
+    flex: 0 0 auto !important;
+  }
+.pk-meet-scope .service-thumb svg{
+    width: 27px !important;
+    height: 27px !important;
+  }
+.pk-meet-scope .service-title{
+    font-size: .82rem !important;
+    line-height: 1.22 !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .service-detail{
+    display: none !important;
+  }
+/* Make the best-selling label larger and more visible */
+.pk-meet-scope .passport-renewal-kicker{
+    width: fit-content !important;
+    margin-inline: auto !important;
+    padding: 8px 12px !important;
+    color: #ffffff !important;
+    background: rgba(255,255,255,.16) !important;
+    border: 1px solid rgba(255,255,255,.28) !important;
+    border-radius: 999px !important;
+    font-size: .80rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: .075em !important;
+    text-align: center !important;
+  }
+.pk-meet-scope .passport-renewal-kicker::before{
+    display: none !important;
+  }}
+@media (max-width: 380px){.pk-meet-scope .promise-quote p{
+    font-size: 1.20rem !important;
+  }
+.pk-meet-scope .promise-point{
+    gap: 8px !important;
+  }
+.pk-meet-scope .promise-number{
+    font-size: 1.55rem !important;
+  }
+.pk-meet-scope .promise-point strong{
+    font-size: .84rem !important;
+  }
+.pk-meet-scope .service-row{
+    min-height: 110px !important;
+  }
+.pk-meet-scope .service-title{
+    font-size: .76rem !important;
+  }
+.pk-meet-scope .passport-renewal-kicker{
+    font-size: .72rem !important;
+  }}
+/* V31 MOBILE ONLY: numbers left, titles centred */
+@media (max-width: 720px){.pk-meet-scope .promise-point{
+    width: 100% !important;
+    grid-template-columns: 78px minmax(0, 1fr) !important;
+    justify-content: stretch !important;
+    gap: 0 !important;
+    padding: 14px 18px !important;
+  }
+.pk-meet-scope .promise-number{
+    justify-self: start !important;
+    text-align: left !important;
+  }
+.pk-meet-scope .promise-point strong{
+    width: 100% !important;
+    justify-self: stretch !important;
+    padding-right: 78px !important;
+    text-align: center !important;
+  }}
+@media (max-width: 380px){.pk-meet-scope .promise-point{
+    grid-template-columns: 68px minmax(0, 1fr) !important;
+    padding-inline: 14px !important;
+  }
+.pk-meet-scope .promise-point strong{
+    padding-right: 68px !important;
+  }}
+
+/* The renewed passport keeps the original repeating fade / move / resize cycle.
+   The previous integration accidentally froze its transform with !important. */
+.pk-meet-scope .passport-card-new {
+  will-change: opacity, transform;
+}

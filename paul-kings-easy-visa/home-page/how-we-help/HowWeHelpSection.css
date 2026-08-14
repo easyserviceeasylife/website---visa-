@@ -1,0 +1,1645 @@
+/* ===== How we help you - section 2.html ===== */
+.pk-help-scope{
+      --orange: #f75700;
+      --orange-dark: #d94800;
+      --gold: #d7a83f;
+      --gold-soft: #f6e5b9;
+      --ink: #17130f;
+      --muted: #625b55;
+      --white: #ffffff;
+      --cream: #fffaf6;
+      --line: rgba(43, 28, 19, 0.11);
+      --shadow: 0 24px 60px rgba(82, 43, 20, 0.11);
+      --max-width: 1460px;
+    }
+.pk-help-scope *{
+      box-sizing: border-box;
+    }
+.pk-help-scope{
+      scroll-behavior: smooth;
+    }
+.pk-help-scope{
+      min-width: 320px;
+      margin: 0;
+      overflow-x: hidden;
+      color: var(--ink);
+      background: var(--cream);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+.pk-help-scope .section{
+      position: relative;
+      overflow: hidden;
+      padding: 108px 0 118px;
+      background:
+        radial-gradient(circle at 7% 10%, rgba(247, 87, 0, 0.09), transparent 25rem),
+        radial-gradient(circle at 93% 14%, rgba(215, 168, 63, 0.12), transparent 24rem),
+        linear-gradient(180deg, #fffefd 0%, #fff8f2 100%);
+    }
+.pk-help-scope .section::before{
+      content: "";
+      position: absolute;
+      top: 185px;
+      right: -205px;
+      width: 480px;
+      height: 480px;
+      border: 1px solid rgba(247, 87, 0, 0.14);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+.pk-help-scope .container{
+      width: min(calc(100% - 96px), var(--max-width));
+      margin-inline: auto;
+    }
+.pk-help-scope .section-intro{
+      max-width: 1140px;
+      margin: 0 auto 62px;
+      text-align: center;
+    }
+.pk-help-scope .eyebrow{
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      margin: 0 0 22px;
+      color: var(--orange-dark);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+.pk-help-scope .eyebrow::before,.pk-help-scope .eyebrow::after{
+      content: "";
+      width: 35px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--orange));
+      border-radius: 999px;
+    }
+.pk-help-scope h1,.pk-help-scope h2,.pk-help-scope h3,.pk-help-scope p{
+      margin-top: 0;
+    }
+.pk-help-scope h1{
+      margin-bottom: 0;
+      font-size: clamp(4rem, 5.4vw, 6.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      text-wrap: balance;
+    }
+.pk-help-scope .highlight{
+      display: inline-block;
+      margin-top: 16px;
+      padding: 13px 27px 17px;
+      color: var(--white);
+      background: linear-gradient(135deg, #ff6900 0%, var(--orange) 55%, #e34900 100%);
+      border-radius: 20px;
+      box-shadow:
+        0 18px 38px rgba(247, 87, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.24);
+      transform: rotate(-0.6deg);
+    }
+.pk-help-scope .section-copy{
+      max-width: 1040px;
+      margin: 34px auto 0;
+      color: var(--muted);
+      font-size: 1.3rem;
+      line-height: 1.72;
+      text-wrap: balance;
+    }
+.pk-help-scope .destination-banner{
+      width: fit-content;
+      max-width: 100%;
+      margin: 0 auto 34px;
+      padding: 14px 30px 16px;
+      color: var(--white);
+      background: linear-gradient(135deg, #ff6800 0%, var(--orange) 58%, #e24700 100%);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 16px;
+      box-shadow: 0 16px 34px rgba(247, 87, 0, 0.20);
+      font-size: 1.02rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+/* Destination cards */
+.pk-help-scope .destination-grid{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+.pk-help-scope .destination-card{
+      position: relative;
+      min-height: 540px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      transition:
+        transform 220ms ease,
+        box-shadow 220ms ease,
+        border-color 220ms ease;
+      animation: cardReveal 650ms ease both;
+    }
+.pk-help-scope .destination-card:nth-child(2){
+      animation-delay: 110ms;
+    }
+.pk-help-scope .destination-card:nth-child(3){
+      animation-delay: 220ms;
+    }
+.pk-help-scope .destination-card:hover{
+      transform: translateY(-7px);
+      border-color: rgba(247, 87, 0, 0.27);
+      box-shadow: 0 30px 72px rgba(82, 43, 20, 0.15);
+    }
+.pk-help-scope .card-header{
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 24px;
+      color: var(--white);
+      background: linear-gradient(135deg, #ff6500 0%, var(--orange) 60%, #e14800 100%);
+      text-align: center;
+    }
+.pk-help-scope .flag{
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 14px;
+      box-shadow: 0 10px 22px rgba(81, 29, 0, 0.18);
+      font-size: 1.55rem;
+    }
+.pk-help-scope .card-header h2{
+      margin-bottom: 0;
+      font-size: 1.75rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+.pk-help-scope .card-body{
+      position: relative;
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 46px 34px 42px;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(247, 87, 0, 0.08), transparent 15rem),
+        linear-gradient(180deg, #ffffff 0%, #fffaf6 100%);
+    }
+.pk-help-scope .card-body::after{
+      content: "";
+      position: absolute;
+      right: -95px;
+      bottom: -110px;
+      width: 250px;
+      height: 250px;
+      border: 1px solid rgba(247, 87, 0, 0.10);
+      border-radius: 50%;
+    }
+.pk-help-scope .visa-visual{
+      position: relative;
+      width: 285px;
+      height: 305px;
+      animation: floatVisual 4.4s ease-in-out infinite;
+    }
+.pk-help-scope .destination-card:nth-child(2) .visa-visual{
+      animation-delay: 0.5s;
+    }
+.pk-help-scope .destination-card:nth-child(3) .visa-visual{
+      animation-delay: 1s;
+    }
+.pk-help-scope .passport{
+      position: absolute;
+      left: 16px;
+      bottom: 18px;
+      z-index: 2;
+      width: 164px;
+      height: 226px;
+      padding: 24px 20px;
+      color: var(--white);
+      background: linear-gradient(145deg, #6f1600 0%, #8f2100 52%, #4b0d00 100%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 15px 15px 13px 13px;
+      box-shadow:
+        0 24px 42px rgba(58, 20, 3, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      transform: rotate(-7deg);
+    }
+.pk-help-scope .destination-card:nth-child(2) .passport{
+      background: linear-gradient(145deg, #7d1212 0%, #9a1d1d 52%, #500909 100%);
+    }
+.pk-help-scope .destination-card:nth-child(3) .passport{
+      background: linear-gradient(145deg, #1f315e 0%, #28427d 55%, #162346 100%);
+    }
+.pk-help-scope .passport-title,.pk-help-scope .passport-country{
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+    }
+.pk-help-scope .passport-title{
+      margin-bottom: 18px;
+      color: #f8deb0;
+      font-size: 0.58rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+    }
+.pk-help-scope .passport-emblem{
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 19px;
+      color: #f8deb0;
+      border: 2px solid rgba(248, 222, 176, 0.84);
+      border-radius: 50%;
+      font-size: 1.8rem;
+    }
+.pk-help-scope .passport-country{
+      color: #f8deb0;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      line-height: 1.35;
+    }
+.pk-help-scope .document{
+      position: absolute;
+      top: 8px;
+      right: 4px;
+      z-index: 3;
+      width: 170px;
+      height: 225px;
+      padding: 23px 20px;
+      background: var(--white);
+      border: 1px solid rgba(43, 28, 19, 0.10);
+      border-radius: 14px;
+      box-shadow: 0 22px 42px rgba(60, 38, 22, 0.17);
+      transform: rotate(7deg);
+    }
+.pk-help-scope .document::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, transparent 48%, #fff1e8 49%);
+      border-radius: 0 14px 0 0;
+    }
+.pk-help-scope .doc-header{
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 21px;
+    }
+.pk-help-scope .doc-flag{
+      width: 31px;
+      height: 31px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: #fff7f0;
+      border: 1px solid rgba(43, 28, 19, 0.08);
+      border-radius: 9px;
+      font-size: 1rem;
+    }
+.pk-help-scope .doc-lines{
+      display: grid;
+      flex: 1;
+      gap: 6px;
+    }
+.pk-help-scope .doc-lines span,.pk-help-scope .form-lines span{
+      display: block;
+      height: 6px;
+      background: #eee6df;
+      border-radius: 999px;
+    }
+.pk-help-scope .doc-lines span:nth-child(2){
+      width: 68%;
+    }
+.pk-help-scope .visa-stamp{
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      margin: 9px auto 17px;
+      color: var(--orange);
+      border: 3px double rgba(247, 87, 0, 0.72);
+      border-radius: 50%;
+      font-size: 0.68rem;
+      font-weight: 950;
+      letter-spacing: 0.12em;
+      text-align: center;
+      text-transform: uppercase;
+      transform: rotate(-11deg);
+    }
+.pk-help-scope .form-lines{
+      display: grid;
+      gap: 8px;
+    }
+.pk-help-scope .form-lines span:nth-child(2){
+      width: 82%;
+    }
+.pk-help-scope .form-lines span:nth-child(3){
+      width: 58%;
+    }
+.pk-help-scope .approval-tag{
+      position: absolute;
+      right: 18px;
+      bottom: 16px;
+      z-index: 4;
+      padding: 10px 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+      border-radius: 999px;
+      box-shadow: 0 12px 24px rgba(247, 87, 0, 0.22);
+      font-size: 0.62rem;
+      font-weight: 900;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      transform: rotate(-3deg);
+    }
+/* Editorial visa panel */
+.pk-help-scope .visa-editorial{
+      position: relative;
+      margin-top: 92px;
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+.pk-help-scope .editorial-label{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 10;
+      padding: 12px 24px 13px;
+      color: var(--white);
+      background: linear-gradient(135deg, #ff6900 0%, var(--orange) 55%, #e34900 100%);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 14px;
+      box-shadow:
+        0 16px 32px rgba(247, 87, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.26);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      text-align: center;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+.pk-help-scope .editorial-main{
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: 54px;
+      align-items: start;
+      padding: 66px 52px 20px;
+    }
+.pk-help-scope .editorial-intro{
+      padding: 0 10px 0 12px;
+      text-align: left;
+    }
+.pk-help-scope .editorial-intro h2{
+      max-width: 540px;
+      margin: 0 0 20px;
+      font-size: 3.15rem;
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      text-wrap: balance;
+    }
+.pk-help-scope .editorial-intro p{
+      max-width: 550px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.03rem;
+      line-height: 1.72;
+    }
+.pk-help-scope .editorial-list{
+      display: grid;
+      align-content: start;
+    }
+.pk-help-scope .editorial-row{
+      display: grid;
+      grid-template-columns: 58px minmax(220px, 0.9fr) minmax(300px, 1.1fr);
+      gap: 20px;
+      align-items: start;
+      padding: 0 0 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(215, 168, 63, 0.34);
+    }
+.pk-help-scope .editorial-row:last-child{
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+.pk-help-scope .editorial-check{
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: linear-gradient(145deg, #ff6a00, var(--orange));
+      border: 1px solid rgba(247, 87, 0, 0.32);
+      border-radius: 50%;
+      box-shadow:
+        0 10px 22px rgba(247, 87, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
+      font-size: 1rem;
+      font-weight: 950;
+      transition:
+        transform 220ms ease,
+        box-shadow 220ms ease;
+    }
+.pk-help-scope .editorial-row:hover .editorial-check{
+      transform: translateY(-3px) scale(1.04);
+      box-shadow:
+        0 15px 30px rgba(247, 87, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    }
+.pk-help-scope .editorial-row h3{
+      margin: 4px 0 0;
+      font-size: 1.47rem;
+      line-height: 1.14;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+.pk-help-scope .editorial-row p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.91rem;
+      line-height: 1.62;
+    }
+.pk-help-scope .editorial-speciality{
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 34px;
+      align-items: center;
+      padding: 30px 52px 32px;
+      color: var(--white);
+      background: linear-gradient(135deg, #ff6500 0%, var(--orange) 52%, #df4700 100%);
+      border-radius: 0 0 27px 27px;
+    }
+.pk-help-scope .editorial-speciality h3{
+      max-width: 470px;
+      margin: 0;
+      color: var(--white);
+      font-size: 2.08rem;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+.pk-help-scope .editorial-speciality p{
+      max-width: 780px;
+      margin: 0;
+      color: var(--white);
+      font-size: 0.98rem;
+      line-height: 1.68;
+    }
+@keyframes cardReveal{from{
+        opacity: 0;
+        transform: translateY(18px);
+      }
+to{
+        opacity: 1;
+        transform: translateY(0);
+      }}
+@keyframes floatVisual{0%, 100%{
+        transform: translateY(0);
+      }
+50%{
+        transform: translateY(-8px);
+      }}
+/* Tablet */
+@media (max-width: 1040px){.pk-help-scope .container{
+        width: min(calc(100% - 44px), var(--max-width));
+      }
+.pk-help-scope .section{
+        padding-top: 84px;
+      }
+.pk-help-scope .section-copy{
+        font-size: 1.16rem;
+      }
+.pk-help-scope .destination-grid{
+        gap: 18px;
+      }
+.pk-help-scope .destination-card{
+        min-height: 500px;
+      }
+.pk-help-scope .visa-visual{
+        transform-origin: center;
+      }
+.pk-help-scope .editorial-main{
+        grid-template-columns: 0.82fr 1.18fr;
+        gap: 34px;
+        padding-inline: 34px;
+      }
+.pk-help-scope .editorial-intro h2{
+        font-size: 2.65rem;
+      }
+.pk-help-scope .editorial-row{
+        grid-template-columns: 50px minmax(180px, 0.85fr) minmax(240px, 1.15fr);
+        gap: 14px;
+      }
+.pk-help-scope .editorial-speciality{
+        padding-inline: 34px;
+      }}
+/* Mobile */
+@media (max-width: 760px){.pk-help-scope .section{
+        padding: 62px 0 72px;
+      }
+.pk-help-scope .container{
+        width: min(calc(100% - 24px), var(--max-width));
+      }
+.pk-help-scope .section-intro{
+        margin-bottom: 42px;
+      }
+.pk-help-scope .eyebrow{
+        gap: 8px;
+        margin-bottom: 17px;
+        font-size: 0.63rem;
+        letter-spacing: 0.1em;
+      }
+.pk-help-scope .eyebrow::before,.pk-help-scope .eyebrow::after{
+        width: 24px;
+      }
+.pk-help-scope h1{
+        font-size: clamp(2.75rem, 12vw, 4.2rem);
+        line-height: 0.98;
+      }
+.pk-help-scope .highlight{
+        margin-top: 10px;
+        padding: 9px 16px 12px;
+        border-radius: 14px;
+      }
+.pk-help-scope .section-copy{
+        margin-top: 24px;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+.pk-help-scope .destination-banner{
+        margin-bottom: 20px;
+        padding: 11px 17px 12px;
+        border-radius: 13px;
+        font-size: 0.73rem;
+        letter-spacing: 0.07em;
+      }
+.pk-help-scope .destination-grid{
+        grid-template-columns: 1fr;
+        gap: 17px;
+      }
+.pk-help-scope .destination-card{
+        min-height: 420px;
+        border-radius: 22px;
+      }
+.pk-help-scope .card-header{
+        min-height: 82px;
+        padding: 18px;
+      }
+.pk-help-scope .flag{
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        font-size: 1.35rem;
+      }
+.pk-help-scope .card-header h2{
+        font-size: 1.42rem;
+      }
+.pk-help-scope .card-body{
+        min-height: 330px;
+        padding: 24px 18px 26px;
+      }
+.pk-help-scope .visa-visual{
+        width: 238px;
+        height: 258px;
+      }
+.pk-help-scope .passport{
+        left: 12px;
+        bottom: 14px;
+        width: 137px;
+        height: 191px;
+        padding: 20px 16px;
+      }
+.pk-help-scope .passport-title{
+        margin-bottom: 14px;
+        font-size: 0.5rem;
+      }
+.pk-help-scope .passport-emblem{
+        width: 52px;
+        height: 52px;
+        margin-bottom: 15px;
+        font-size: 1.45rem;
+      }
+.pk-help-scope .passport-country{
+        font-size: 0.57rem;
+      }
+.pk-help-scope .document{
+        top: 7px;
+        right: 4px;
+        width: 143px;
+        height: 191px;
+        padding: 19px 16px;
+      }
+.pk-help-scope .doc-header{
+        margin-bottom: 14px;
+      }
+.pk-help-scope .doc-flag{
+        width: 28px;
+        height: 28px;
+      }
+.pk-help-scope .visa-stamp{
+        width: 68px;
+        height: 68px;
+        margin: 7px auto 12px;
+        font-size: 0.57rem;
+      }
+.pk-help-scope .approval-tag{
+        right: 12px;
+        bottom: 11px;
+        padding: 8px 10px;
+        font-size: 0.5rem;
+      }
+.pk-help-scope .visa-editorial{
+        margin-top: 72px;
+        border-radius: 22px;
+      }
+.pk-help-scope .editorial-label{
+        width: max-content;
+        max-width: calc(100% - 44px);
+        padding: 10px 18px 11px;
+        border-radius: 12px;
+        font-size: 0.62rem;
+      }
+.pk-help-scope .editorial-main{
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 52px 20px 18px;
+      }
+.pk-help-scope .editorial-intro{
+        padding: 0;
+      }
+.pk-help-scope .editorial-intro h2{
+        max-width: 520px;
+        margin-bottom: 14px;
+        font-size: 2.35rem;
+        line-height: 1.02;
+      }
+.pk-help-scope .editorial-intro p{
+        max-width: none;
+        font-size: 0.95rem;
+        line-height: 1.62;
+      }
+.pk-help-scope .editorial-list{
+        gap: 0;
+      }
+.pk-help-scope .editorial-row{
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 12px;
+        padding-bottom: 17px;
+        margin-bottom: 17px;
+      }
+.pk-help-scope .editorial-check{
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 38px;
+        height: 38px;
+        font-size: 0.88rem;
+      }
+.pk-help-scope .editorial-row h3{
+        grid-column: 2;
+        margin: 1px 0 6px;
+        font-size: 1.18rem;
+      }
+.pk-help-scope .editorial-row p{
+        grid-column: 2;
+        font-size: 0.84rem;
+        line-height: 1.55;
+      }
+.pk-help-scope .editorial-speciality{
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 24px 20px 26px;
+        border-radius: 0 0 21px 21px;
+      }
+.pk-help-scope .editorial-speciality h3{
+        font-size: 1.55rem;
+      }
+.pk-help-scope .editorial-speciality p{
+        font-size: 0.88rem;
+        line-height: 1.58;
+      }}
+@media (max-width: 390px){.pk-help-scope .container{
+        width: min(calc(100% - 18px), var(--max-width));
+      }
+.pk-help-scope h1{
+        font-size: 2.62rem;
+      }
+.pk-help-scope .section-copy{
+        font-size: 0.94rem;
+      }
+.pk-help-scope .editorial-main{
+        padding-inline: 16px;
+      }
+.pk-help-scope .editorial-intro h2{
+        font-size: 2.08rem;
+      }
+.pk-help-scope .editorial-speciality{
+        padding-inline: 16px;
+      }}
+@media (prefers-reduced-motion: reduce){.pk-help-scope *,.pk-help-scope *::before,.pk-help-scope *::after{
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }}
+/* V18 final desktop alignment and typography */
+.pk-help-scope .editorial-main{
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: stretch;
+      padding-top: 76px;
+      padding-bottom: 24px;
+    }
+.pk-help-scope .editorial-intro{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 34px 20px 18px;
+      text-align: center;
+    }
+.pk-help-scope .editorial-intro h2{
+      max-width: 570px;
+      margin: 0 auto 22px;
+      font-size: 3.05rem;
+      line-height: 1.04;
+      text-align: center;
+    }
+.pk-help-scope .editorial-intro p{
+      max-width: 570px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.72;
+      text-align: center;
+    }
+.pk-help-scope .editorial-list{
+      align-self: start;
+    }
+.pk-help-scope .editorial-row{
+      padding-bottom: 17px;
+      margin-bottom: 17px;
+    }
+.pk-help-scope .editorial-row h3{
+      font-size: 1.34rem;
+    }
+.pk-help-scope .editorial-row p{
+      font-size: 0.84rem;
+      line-height: 1.58;
+    }
+/* Mobile-specific redesign */
+@media (max-width: 760px){.pk-help-scope .section{
+        padding-top: 54px;
+      }
+.pk-help-scope h1{
+        font-size: clamp(2.3rem, 10.4vw, 3.15rem);
+        line-height: 1;
+      }
+.pk-help-scope .highlight{
+        display: block;
+        width: fit-content;
+        max-width: 330px;
+        margin: 9px auto 0;
+        padding: 8px 14px 10px;
+        border-radius: 12px;
+        font-size: 0.72em;
+        line-height: 1.05;
+      }
+.pk-help-scope .section-copy{
+        max-width: 430px;
+        margin-top: 21px;
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+.pk-help-scope .destination-banner{
+        margin-bottom: 16px;
+        padding: 9px 15px 10px;
+        font-size: 0.66rem;
+      }
+.pk-help-scope .destination-grid{
+        gap: 13px;
+      }
+.pk-help-scope .destination-card{
+        min-height: 286px;
+        border-radius: 19px;
+      }
+.pk-help-scope .card-header{
+        min-height: 62px;
+        gap: 10px;
+        padding: 12px 15px;
+      }
+.pk-help-scope .flag{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+      }
+.pk-help-scope .card-header h2{
+        font-size: 1.18rem;
+      }
+.pk-help-scope .card-body{
+        min-height: 220px;
+        padding: 10px 12px 13px;
+      }
+.pk-help-scope .visa-visual{
+        width: 198px;
+        height: 207px;
+      }
+.pk-help-scope .passport{
+        left: 9px;
+        bottom: 11px;
+        width: 111px;
+        height: 153px;
+        padding: 14px 11px;
+        border-radius: 11px;
+      }
+.pk-help-scope .passport-title{
+        margin-bottom: 10px;
+        font-size: 0.42rem;
+      }
+.pk-help-scope .passport-emblem{
+        width: 42px;
+        height: 42px;
+        margin-bottom: 10px;
+        font-size: 1.18rem;
+      }
+.pk-help-scope .passport-country{
+        font-size: 0.47rem;
+      }
+.pk-help-scope .document{
+        top: 5px;
+        right: 3px;
+        width: 115px;
+        height: 153px;
+        padding: 14px 12px;
+        border-radius: 10px;
+      }
+.pk-help-scope .document::before{
+        width: 36px;
+        height: 36px;
+      }
+.pk-help-scope .doc-header{
+        gap: 6px;
+        margin-bottom: 9px;
+      }
+.pk-help-scope .doc-flag{
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+        font-size: 0.8rem;
+      }
+.pk-help-scope .doc-lines{
+        gap: 4px;
+      }
+.pk-help-scope .doc-lines span,.pk-help-scope .form-lines span{
+        height: 4px;
+      }
+.pk-help-scope .visa-stamp{
+        width: 50px;
+        height: 50px;
+        margin: 5px auto 8px;
+        border-width: 2px;
+        font-size: 0.43rem;
+      }
+.pk-help-scope .form-lines{
+        gap: 5px;
+      }
+.pk-help-scope .approval-tag{
+        right: 8px;
+        bottom: 8px;
+        padding: 6px 8px;
+        font-size: 0.4rem;
+      }
+.pk-help-scope .visa-editorial{
+        margin-top: 67px;
+      }
+.pk-help-scope .editorial-main{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 58px 17px 16px;
+      }
+.pk-help-scope .editorial-intro{
+        align-items: center;
+        justify-content: flex-start;
+        padding: 6px 0 0;
+        text-align: center;
+      }
+.pk-help-scope .editorial-intro h2{
+        max-width: 500px;
+        margin: 0 auto 13px;
+        font-size: 2rem;
+        line-height: 1.04;
+        text-align: center;
+      }
+.pk-help-scope .editorial-intro p{
+        max-width: 500px;
+        margin: 0 auto;
+        font-size: 0.86rem;
+        line-height: 1.56;
+        text-align: center;
+      }
+.pk-help-scope .editorial-row{
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 10px;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+      }
+.pk-help-scope .editorial-check{
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+      }
+.pk-help-scope .editorial-row h3{
+        margin-top: 0;
+        font-size: 1rem;
+        line-height: 1.16;
+      }
+.pk-help-scope .editorial-row p{
+        font-size: 0.75rem;
+        line-height: 1.48;
+      }
+.pk-help-scope .editorial-speciality{
+        justify-items: center;
+        gap: 12px;
+        padding: 23px 18px 25px;
+        text-align: center;
+      }
+.pk-help-scope .editorial-speciality h3{
+        max-width: 420px;
+        margin: 0 auto;
+        font-size: 1.45rem;
+        line-height: 1.12;
+        text-align: center;
+      }
+.pk-help-scope .editorial-speciality p{
+        max-width: 500px;
+        margin: 0 auto;
+        font-size: 0.82rem;
+        line-height: 1.54;
+        text-align: center;
+      }}
+@media (max-width: 390px){.pk-help-scope h1{
+        font-size: 2.18rem;
+      }
+.pk-help-scope .highlight{
+        max-width: 292px;
+        font-size: 0.7em;
+      }
+.pk-help-scope .destination-card{
+        min-height: 274px;
+      }
+.pk-help-scope .card-body{
+        min-height: 208px;
+      }
+.pk-help-scope .editorial-intro h2{
+        font-size: 1.82rem;
+      }}
+/* V19: desktop alignment and redesigned speciality section */
+@media (min-width: 761px){.pk-help-scope .editorial-main{
+        align-items: stretch;
+      }
+.pk-help-scope .editorial-intro{
+        height: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 18px 2px 12px;
+        text-align: left;
+      }
+.pk-help-scope .editorial-intro h2{
+        max-width: 590px;
+        margin: 0;
+        text-align: left;
+      }
+.pk-help-scope .editorial-intro p{
+        max-width: 575px;
+        margin: 0;
+        text-align: left;
+      }
+.pk-help-scope .editorial-list{
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+      }
+.pk-help-scope .editorial-row{
+        height: 100%;
+        align-items: center;
+      }}
+.pk-help-scope .editorial-speciality{
+      grid-template-columns: minmax(250px, 0.48fr) minmax(0, 1.52fr);
+      gap: 34px;
+      padding: 31px 42px 33px;
+    }
+.pk-help-scope .speciality-route{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      min-width: 0;
+    }
+.pk-help-scope .speciality-gold-label{
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 12px 22px;
+      color: #713600;
+      background:
+        linear-gradient(135deg, #fff0b8 0%, #e0b34e 48%, #f7df91 100%);
+      border: 1px solid rgba(255, 248, 219, 0.72);
+      border-radius: 999px;
+      box-shadow:
+        0 13px 28px rgba(105, 47, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.72);
+      font-size: 0.76rem;
+      font-weight: 950;
+      letter-spacing: 0.11em;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      animation: specialityGlow 2.8s ease-in-out infinite;
+    }
+.pk-help-scope .speciality-gold-label::after{
+      content: "";
+      position: absolute;
+      top: -50%;
+      bottom: -50%;
+      left: -38%;
+      width: 24%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.78),
+        transparent
+      );
+      transform: skewX(-20deg);
+      animation: specialityShine 3.6s ease-in-out infinite;
+    }
+.pk-help-scope .speciality-arrows{
+      display: inline-flex;
+      align-items: center;
+      gap: 1px;
+      color: #ffe9ad;
+      filter: drop-shadow(0 4px 8px rgba(94, 28, 0, 0.20));
+    }
+.pk-help-scope .speciality-arrows i{
+      display: block;
+      font-style: normal;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1;
+      opacity: 0.36;
+      animation: specialityArrow 1.5s ease-in-out infinite;
+    }
+.pk-help-scope .speciality-arrows i:nth-child(2){
+      animation-delay: 0.18s;
+    }
+.pk-help-scope .speciality-arrows i:nth-child(3){
+      animation-delay: 0.36s;
+    }
+.pk-help-scope .speciality-content{
+      position: relative;
+      z-index: 2;
+      min-width: 0;
+      display: grid;
+      grid-template-columns: minmax(275px, 0.72fr) minmax(0, 1.28fr);
+      gap: 26px;
+      align-items: center;
+    }
+.pk-help-scope .speciality-title-box{
+      min-width: 0;
+      padding: 19px 22px 21px;
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid rgba(255, 255, 255, 0.88);
+      border-radius: 17px;
+      box-shadow:
+        0 15px 32px rgba(101, 30, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+.pk-help-scope .speciality-title-box h3{
+      max-width: none;
+      margin: 0;
+      color: var(--orange);
+      font-size: 1.72rem;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+      text-align: left;
+    }
+.pk-help-scope .speciality-content > p{
+      max-width: none;
+      margin: 0;
+      color: #ffffff;
+      font-size: 0.92rem;
+      line-height: 1.65;
+      text-align: left;
+    }
+@keyframes specialityGlow{0%, 100%{
+        transform: translateY(0);
+        box-shadow:
+          0 13px 28px rgba(105, 47, 0, 0.24),
+          0 0 0 0 rgba(255, 224, 131, 0.14),
+          inset 0 1px 0 rgba(255, 255, 255, 0.72);
+      }
+50%{
+        transform: translateY(-3px);
+        box-shadow:
+          0 18px 34px rgba(105, 47, 0, 0.28),
+          0 0 0 8px rgba(255, 224, 131, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.82);
+      }}
+@keyframes specialityShine{0%, 18%{
+        left: -38%;
+        opacity: 0;
+      }
+32%{
+        opacity: 1;
+      }
+58%{
+        left: 118%;
+        opacity: 0;
+      }
+100%{
+        left: 118%;
+        opacity: 0;
+      }}
+@keyframes specialityArrow{0%, 100%{
+        opacity: 0.28;
+        transform: translateX(0);
+      }
+50%{
+        opacity: 1;
+        transform: translateX(5px);
+      }}
+/* Smaller destination cards only on mobile */
+@media (max-width: 760px){.pk-help-scope .destination-card{
+        width: min(100%, 420px);
+        min-height: 250px;
+        margin-inline: auto;
+      }
+.pk-help-scope .card-header{
+        min-height: 56px;
+        padding: 10px 13px;
+      }
+.pk-help-scope .flag{
+        width: 32px;
+        height: 32px;
+        border-radius: 9px;
+        font-size: 1rem;
+      }
+.pk-help-scope .card-header h2{
+        font-size: 1.12rem;
+      }
+.pk-help-scope .card-body{
+        min-height: 188px;
+        padding: 7px 10px 10px;
+      }
+.pk-help-scope .visa-visual{
+        width: 164px;
+        height: 172px;
+      }
+.pk-help-scope .passport{
+        left: 7px;
+        bottom: 8px;
+        width: 92px;
+        height: 128px;
+        padding: 11px 9px;
+        border-radius: 9px;
+      }
+.pk-help-scope .passport-title{
+        margin-bottom: 7px;
+        font-size: 0.36rem;
+      }
+.pk-help-scope .passport-emblem{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 7px;
+        font-size: 0.95rem;
+      }
+.pk-help-scope .passport-country{
+        font-size: 0.39rem;
+      }
+.pk-help-scope .document{
+        top: 4px;
+        right: 2px;
+        width: 95px;
+        height: 128px;
+        padding: 10px 9px;
+        border-radius: 8px;
+      }
+.pk-help-scope .document::before{
+        width: 29px;
+        height: 29px;
+      }
+.pk-help-scope .doc-header{
+        gap: 5px;
+        margin-bottom: 6px;
+      }
+.pk-help-scope .doc-flag{
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        font-size: 0.68rem;
+      }
+.pk-help-scope .doc-lines{
+        gap: 3px;
+      }
+.pk-help-scope .doc-lines span,.pk-help-scope .form-lines span{
+        height: 3px;
+      }
+.pk-help-scope .visa-stamp{
+        width: 42px;
+        height: 42px;
+        margin: 4px auto 6px;
+        font-size: 0.35rem;
+      }
+.pk-help-scope .form-lines{
+        gap: 4px;
+      }
+.pk-help-scope .approval-tag{
+        right: 6px;
+        bottom: 6px;
+        padding: 5px 7px;
+        font-size: 0.34rem;
+      }
+.pk-help-scope .editorial-intro h2{
+        font-size: 2.18rem;
+      }
+.pk-help-scope .editorial-speciality{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 25px 18px 27px;
+      }
+.pk-help-scope .speciality-route{
+        flex-direction: column;
+        gap: 7px;
+      }
+.pk-help-scope .speciality-gold-label{
+        min-height: 46px;
+        padding: 10px 18px;
+        font-size: 0.66rem;
+      }
+.pk-help-scope .speciality-arrows{
+        transform: rotate(90deg);
+      }
+.pk-help-scope .speciality-arrows i{
+        font-size: 1.6rem;
+      }
+.pk-help-scope .speciality-content{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+      }
+.pk-help-scope .speciality-title-box{
+        width: 100%;
+        padding: 17px 16px 18px;
+        border-radius: 15px;
+      }
+.pk-help-scope .speciality-title-box h3{
+        font-size: 1.42rem;
+        text-align: center;
+      }
+.pk-help-scope .speciality-content > p{
+        max-width: 520px;
+        margin-inline: auto;
+        font-size: 0.82rem;
+        line-height: 1.56;
+        text-align: center;
+      }}
+@media (max-width: 390px){.pk-help-scope .destination-card{
+        min-height: 238px;
+      }
+.pk-help-scope .card-body{
+        min-height: 176px;
+      }
+.pk-help-scope .editorial-intro h2{
+        font-size: 2.02rem;
+      }
+.pk-help-scope .speciality-title-box h3{
+        font-size: 1.3rem;
+      }}
+@media (prefers-reduced-motion: reduce){.pk-help-scope .speciality-gold-label,.pk-help-scope .speciality-gold-label::after,.pk-help-scope .speciality-arrows i{
+        animation: none !important;
+      }}
+/* V20 final reviewed composition */
+@media (min-width: 761px){.pk-help-scope .editorial-main{
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 54px;
+    align-items: start;
+    padding: 70px 52px 28px;
+  }
+.pk-help-scope .editorial-intro{
+    display: block;
+    height: auto;
+    padding: 0 20px 0 12px;
+    text-align: left;
+  }
+.pk-help-scope .editorial-intro h2{
+    max-width: 590px;
+    margin: 0 0 22px;
+    font-size: 3.08rem;
+    line-height: 1.02;
+    text-align: left;
+  }
+.pk-help-scope .editorial-intro p{
+    max-width: 575px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+.pk-help-scope .editorial-list{
+    height: auto;
+    display: grid;
+    grid-template-rows: none;
+    align-content: start;
+    align-self: start;
+  }
+.pk-help-scope .editorial-row{
+    height: auto;
+    min-height: 0;
+    padding: 0 0 18px;
+    margin-bottom: 18px;
+    align-items: start;
+  }
+.pk-help-scope .editorial-row:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }}
+.pk-help-scope .editorial-speciality{
+  grid-template-columns: minmax(235px, 0.42fr) minmax(0, 1.58fr);
+  gap: 30px;
+  align-items: center;
+  padding: 30px 42px 32px;
+}
+.pk-help-scope .speciality-route{
+  justify-content: flex-start;
+  gap: 14px;
+}
+.pk-help-scope .speciality-gold-label{
+  min-height: 48px;
+  padding: 10px 18px;
+  font-size: 0.68rem;
+}
+.pk-help-scope .speciality-arrows i{
+  font-size: 1.72rem;
+}
+.pk-help-scope .speciality-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+.pk-help-scope .speciality-title-box{
+  width: fit-content;
+  max-width: 360px;
+  padding: 12px 16px 14px;
+  border-radius: 13px;
+}
+.pk-help-scope .speciality-title-box h3{
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+.pk-help-scope .speciality-content > p{
+  max-width: 760px;
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+@media (max-width: 760px){.pk-help-scope .destination-card{
+    width: min(100%, 390px);
+    min-height: 226px;
+  }
+.pk-help-scope .card-header{
+    min-height: 52px;
+    padding: 9px 12px;
+  }
+.pk-help-scope .flag{
+    width: 30px;
+    height: 30px;
+    font-size: 0.92rem;
+  }
+.pk-help-scope .card-header h2{
+    font-size: 1.06rem;
+  }
+.pk-help-scope .card-body{
+    min-height: 168px;
+    padding: 6px 8px 8px;
+  }
+.pk-help-scope .visa-visual{
+    width: 150px;
+    height: 157px;
+  }
+.pk-help-scope .passport{
+    width: 84px;
+    height: 116px;
+  }
+.pk-help-scope .document{
+    width: 86px;
+    height: 116px;
+  }
+.pk-help-scope .editorial-intro h2{
+    font-size: 2.22rem;
+  }
+.pk-help-scope .editorial-speciality{
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 23px 16px 25px;
+    text-align: center;
+  }
+.pk-help-scope .speciality-route{
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+.pk-help-scope .speciality-gold-label{
+    min-height: 42px;
+    padding: 9px 16px;
+    font-size: 0.61rem;
+  }
+.pk-help-scope .speciality-arrows{
+    transform: rotate(90deg);
+  }
+.pk-help-scope .speciality-arrows i{
+    font-size: 1.4rem;
+  }
+.pk-help-scope .speciality-content{
+    align-items: center;
+    gap: 12px;
+  }
+.pk-help-scope .speciality-title-box{
+    width: fit-content;
+    max-width: 285px;
+    padding: 10px 13px 12px;
+    border-radius: 12px;
+  }
+.pk-help-scope .speciality-title-box h3{
+    font-size: 1.18rem;
+    text-align: center;
+  }
+.pk-help-scope .speciality-content > p{
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    line-height: 1.54;
+    text-align: center;
+  }}
+@media (max-width: 390px){.pk-help-scope .destination-card{
+    min-height: 216px;
+  }
+.pk-help-scope .card-body{
+    min-height: 158px;
+  }
+.pk-help-scope .editorial-intro h2{
+    font-size: 2.02rem;
+  }
+.pk-help-scope .speciality-title-box{
+    max-width: 260px;
+  }
+.pk-help-scope .speciality-title-box h3{
+    font-size: 1.08rem;
+  }}
+/* V21: larger centred desktop copy and centred speciality content */
+@media (min-width: 761px){.pk-help-scope .editorial-main{
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    align-items: stretch;
+    padding-top: 72px;
+    padding-bottom: 28px;
+  }
+.pk-help-scope .editorial-intro{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 24px;
+    text-align: center;
+  }
+.pk-help-scope .editorial-intro h2{
+    max-width: 650px;
+    margin: 0 auto 24px;
+    font-size: clamp(3.4rem, 4.15vw, 4.45rem);
+    line-height: 1;
+    letter-spacing: -0.055em;
+    text-align: center;
+  }
+.pk-help-scope .editorial-intro p{
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.12rem;
+    line-height: 1.72;
+    text-align: center;
+  }
+.pk-help-scope .editorial-speciality{
+    grid-template-columns: minmax(225px, 0.4fr) minmax(0, 1.6fr);
+  }
+.pk-help-scope .speciality-content{
+    align-items: center;
+    text-align: center;
+  }
+.pk-help-scope .speciality-title-box{
+    width: fit-content;
+    max-width: 390px;
+    margin-inline: auto;
+  }
+.pk-help-scope .speciality-title-box h3{
+    font-size: 1.48rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+.pk-help-scope .speciality-content > p{
+    max-width: 790px;
+    margin-inline: auto;
+    font-size: 0.96rem;
+    line-height: 1.66;
+    text-align: center;
+  }}
+/* Keep the same centred treatment on mobile. */
+@media (max-width: 760px){.pk-help-scope .editorial-intro{
+    align-items: center;
+    text-align: center;
+  }
+.pk-help-scope .editorial-intro h2,.pk-help-scope .editorial-intro p{
+    margin-inline: auto;
+    text-align: center;
+  }
+.pk-help-scope .speciality-content,.pk-help-scope .speciality-title-box h3,.pk-help-scope .speciality-content > p{
+    text-align: center;
+  }}
+/* V22: compact desktop speciality band, larger gold pill, white pill text */
+.pk-help-scope .speciality-gold-label{
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+  text-shadow: 0 1px 2px rgba(82, 35, 0, 0.28);
+}
+@media (min-width: 761px){.pk-help-scope .editorial-speciality{
+    min-height: 0;
+    gap: 24px;
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
+.pk-help-scope .speciality-route{
+    gap: 16px;
+  }
+.pk-help-scope .speciality-gold-label{
+    min-height: 64px;
+    padding: 15px 30px;
+    font-size: 0.88rem;
+    letter-spacing: 0.12em;
+  }
+.pk-help-scope .speciality-arrows i{
+    font-size: 1.8rem;
+  }
+.pk-help-scope .speciality-content{
+    gap: 20px;
+  }
+.pk-help-scope .speciality-title-box{
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+.pk-help-scope .speciality-content > p{
+    line-height: 1.55;
+  }}
+/* V23: match the established grey section-label styling */
+.pk-help-scope .eyebrow{
+  color: #66605c !important;
+  font-size: 1.02rem !important;
+  font-weight: 950 !important;
+  letter-spacing: .20em !important;
+}
+@media (max-width: 760px){.pk-help-scope .eyebrow{
+    color: #66605c !important;
+    font-size: .64rem !important;
+    font-weight: 950 !important;
+    letter-spacing: .14em !important;
+  }}
+
+/* The standalone section used a page-load reveal. On the combined page, wait until
+   section 2 reaches the viewport so the same animation is actually visible. */
+.pk-help-scope:not(.is-in-view) .destination-card {
+  animation: none !important;
+  opacity: 0;
+  transform: translateY(26px);
+}
+.pk-help-scope.is-in-view .destination-card {
+  animation: cardReveal 650ms ease both;
+}
+.pk-help-scope.is-in-view .destination-card:nth-child(2) {
+  animation-delay: 110ms;
+}
+.pk-help-scope.is-in-view .destination-card:nth-child(3) {
+  animation-delay: 220ms;
+}

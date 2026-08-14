@@ -1,0 +1,987 @@
+/* ===== Client stories - section 4.html ===== */
+.pk-client-scope{
+  --orange:#f75700;
+  --orange-dark:#d94700;
+  --gold:#d7a83f;
+  --ink:#17130f;
+  --muted:#655d56;
+  --white:#ffffff;
+  --cream:#fffaf6;
+  --line:rgba(42,27,18,.10);
+  --shadow:0 30px 80px rgba(71,38,20,.16);
+  --max:1480px;
+}
+.pk-client-scope *{ box-sizing:border-box; }
+.pk-client-scope{ scroll-behavior:smooth; }
+.pk-client-scope{
+  margin:0;
+  color:var(--ink);
+  background:var(--cream);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.pk-client-scope .journeys-section{
+  position:relative;
+  overflow:hidden;
+  padding:112px 0 138px;
+  background:
+    radial-gradient(circle at 5% 10%,rgba(247,87,0,.08),transparent 27rem),
+    radial-gradient(circle at 96% 18%,rgba(215,168,63,.12),transparent 25rem),
+    linear-gradient(180deg,#fffefd 0%,#fff8f2 100%);
+}
+.pk-client-scope .journeys-section::before{
+  content:"";
+  position:absolute;
+  top:160px;
+  right:-230px;
+  width:520px;
+  height:520px;
+  border:1px solid rgba(247,87,0,.11);
+  border-radius:50%;
+  pointer-events:none;
+}
+.pk-client-scope .container{
+  position:relative;
+  z-index:1;
+  width:min(calc(100% - 84px),var(--max));
+  margin-inline:auto;
+}
+.pk-client-scope .section-heading{
+  max-width:1050px;
+  margin:0 auto 96px;
+  text-align:center;
+}
+.pk-client-scope .eyebrow{
+  display:flex;
+  width:max-content;
+  max-width:100%;
+  align-items:center;
+  gap:12px;
+  margin:0 auto 25px;
+  color:var(--orange-dark);
+  font-size:.76rem;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.pk-client-scope .eyebrow::before,.pk-client-scope .eyebrow::after{
+  content:"";
+  width:38px;
+  height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--orange));
+  border-radius:999px;
+}
+.pk-client-scope .section-heading h1{
+  margin:0;
+  font-size:clamp(4.2rem,5.8vw,6.7rem);
+  line-height:.98;
+  letter-spacing:-.064em;
+}
+.pk-client-scope .section-heading h1 span{
+  display:block;
+}
+.pk-client-scope .section-heading h1 .highlight{
+  width:max-content;
+  max-width:100%;
+  margin:17px auto 0;
+  padding:11px 25px 15px;
+  color:var(--white);
+  background:linear-gradient(135deg,#ff6900 0%,var(--orange) 58%,#e24700 100%);
+  border-radius:18px;
+  box-shadow:0 18px 38px rgba(247,87,0,.23),inset 0 1px 0 rgba(255,255,255,.24);
+}
+.pk-client-scope .section-heading p{
+  max-width:850px;
+  margin:31px auto 0;
+  color:var(--muted);
+  font-size:1.12rem;
+  line-height:1.75;
+}
+.pk-client-scope .journeys-list{
+  display:grid;
+  gap:120px;
+}
+.pk-client-scope .journey-story{
+  position:relative;
+  min-height:650px;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(420px,.62fr);
+  align-items:center;
+  isolation:isolate;
+}
+.pk-client-scope .journey-story.reverse{
+  grid-template-columns:minmax(420px,.62fr) minmax(0,1.05fr);
+}
+.pk-client-scope .story-number{
+  position:absolute;
+  top:-66px;
+  left:-18px;
+  z-index:-1;
+  color:rgba(247,87,0,.08);
+  font-size:13rem;
+  font-weight:950;
+  line-height:1;
+  letter-spacing:-.09em;
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity 700ms ease,transform 700ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-client-scope .journey-story.reverse .story-number{
+  right:-18px;
+  left:auto;
+}
+.pk-client-scope .story-photo{
+  position:relative;
+  min-height:610px;
+  overflow:hidden;
+  border-radius:32px;
+  background:#eadfd6;
+  box-shadow:var(--shadow);
+  opacity:0;
+  transform:translateY(34px) scale(.975);
+  transition:opacity 650ms ease,transform 900ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-client-scope .story-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,transparent 54%,rgba(22,12,7,.25)),
+    linear-gradient(90deg,rgba(0,0,0,.06),transparent 35%);
+  pointer-events:none;
+}
+.pk-client-scope .story-photo img{
+  width:100%;
+  height:100%;
+  min-height:610px;
+  display:block;
+  object-fit:cover;
+  object-position:center 47%;
+  transform:scale(1.08);
+  transition:transform 1.4s cubic-bezier(.2,.75,.2,1);
+}
+.pk-client-scope .journey-story:nth-child(2) .story-photo img{
+  object-position:center 46%;
+}
+.pk-client-scope .journey-story:nth-child(3) .story-photo img{
+  object-position:center 44%;
+}
+.pk-client-scope .story-panel{
+  position:relative;
+  z-index:3;
+  min-height:490px;
+  margin-left:-82px;
+  padding:47px 46px 0;
+  background:rgba(255,255,255,.97);
+  border:1px solid rgba(43,28,19,.09);
+  border-radius:27px;
+  box-shadow:0 28px 65px rgba(75,41,23,.16);
+  opacity:0;
+  transform:translateX(58px);
+  transition:opacity 600ms 120ms ease,transform 700ms 120ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-client-scope .journey-story.reverse .story-panel{
+  order:1;
+  margin-right:-82px;
+  margin-left:0;
+  transform:translateX(-58px);
+}
+.pk-client-scope .journey-story.reverse .story-photo{
+  order:2;
+}
+.pk-client-scope .story-topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:24px;
+}
+.pk-client-scope .destination{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--orange-dark);
+  font-size:.69rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.pk-client-scope .flag{
+  font-size:1.18rem;
+  line-height:1;
+}
+.pk-client-scope .route{
+  padding:8px 11px;
+  color:var(--orange-dark);
+  background:#fff0e7;
+  border:1px solid rgba(247,87,0,.14);
+  border-radius:999px;
+  font-size:.61rem;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.pk-client-scope .story-panel h2{
+  margin:0 0 7px;
+  font-size:2.4rem;
+  line-height:1.02;
+  letter-spacing:-.048em;
+}
+.pk-client-scope .countries{
+  margin:0;
+  color:var(--muted);
+  font-size:.8rem;
+  font-weight:700;
+}
+.pk-client-scope .quote{
+  position:relative;
+  margin:30px 0 0;
+  padding:0 0 0 25px;
+  font-size:1.18rem;
+  font-weight:760;
+  line-height:1.5;
+  letter-spacing:-.022em;
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity 500ms 350ms ease,transform 500ms 350ms ease;
+}
+.pk-client-scope .quote::before{
+  content:"“";
+  position:absolute;
+  top:-12px;
+  left:0;
+  color:var(--orange);
+  font-family:Georgia,serif;
+  font-size:3.25rem;
+  line-height:1;
+}
+.pk-client-scope .journey-label{
+  display:block;
+  margin:29px 0 9px;
+  color:var(--orange-dark);
+  font-size:.62rem;
+  font-weight:950;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.pk-client-scope .journey-copy{
+  margin:0;
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.65;
+}
+.pk-client-scope .help-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:8px;
+  margin:24px 0 29px;
+}
+.pk-client-scope .help-grid span{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#514942;
+  font-size:.76rem;
+  line-height:1.42;
+}
+.pk-client-scope .help-grid span::before{
+  content:"✓";
+  width:22px;
+  height:22px;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  background:var(--orange);
+  border-radius:50%;
+  box-shadow:0 7px 14px rgba(247,87,0,.17);
+  font-size:.62rem;
+  font-weight:950;
+}
+.pk-client-scope .outcome{
+  display:flex;
+  min-height:79px;
+  align-items:center;
+  justify-content:space-between;
+  gap:17px;
+  margin:auto -46px 0;
+  padding:18px 46px;
+  color:#fff;
+  background:linear-gradient(135deg,#ff6600,var(--orange) 58%,#dd4500);
+  border-radius:0 0 27px 27px;
+}
+.pk-client-scope .outcome strong,.pk-client-scope .outcome small{
+  display:block;
+}
+.pk-client-scope .outcome strong{
+  margin-bottom:4px;
+  font-size:.9rem;
+}
+.pk-client-scope .outcome small{
+  max-width:310px;
+  color:rgba(255,255,255,.78);
+  font-size:.68rem;
+  line-height:1.4;
+}
+.pk-client-scope .outcome-mark{
+  width:42px;
+  height:42px;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  color:#704108;
+  background:linear-gradient(145deg,#fff4c9,#f7e5b8);
+  border:2px solid rgba(255,255,255,.55);
+  border-radius:50%;
+  font-weight:950;
+}
+.pk-client-scope .journey-line{
+  position:absolute;
+  top:50%;
+  left:0;
+  z-index:2;
+  width:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--orange));
+  border-radius:999px;
+  box-shadow:0 0 0 7px rgba(247,87,0,.07);
+  transform:translateY(-50%);
+  transition:width 900ms 160ms cubic-bezier(.2,.75,.2,1);
+}
+.pk-client-scope .journey-story.reverse .journey-line{
+  right:0;
+  left:auto;
+  background:linear-gradient(90deg,var(--orange),var(--gold));
+}
+.pk-client-scope .journey-story.is-visible .story-number{
+  opacity:1;
+  transform:translateY(0);
+}
+.pk-client-scope .journey-story.is-visible .story-photo{
+  opacity:1;
+  transform:translateY(0) scale(1);
+}
+.pk-client-scope .journey-story.is-visible .story-photo img{
+  transform:scale(1);
+}
+.pk-client-scope .journey-story.is-visible .story-panel{
+  opacity:1;
+  transform:translateX(0);
+}
+.pk-client-scope .journey-story.is-visible .quote{
+  opacity:1;
+  transform:translateY(0);
+}
+.pk-client-scope .journey-story.is-visible .journey-line{
+  width:64%;
+}
+@media (max-width:1120px){.pk-client-scope .journeys-list{
+    gap:95px;
+  }
+.pk-client-scope .journey-story,.pk-client-scope .journey-story.reverse{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+.pk-client-scope .journey-story.reverse .story-photo,.pk-client-scope .journey-story.reverse .story-panel{
+    order:initial;
+  }
+.pk-client-scope .story-photo{
+    min-height:560px;
+  }
+.pk-client-scope .story-photo img{
+    min-height:560px;
+  }
+.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    width:calc(100% - 70px);
+    min-height:0;
+    margin:-82px auto 0;
+    transform:translateY(46px);
+  }
+.pk-client-scope .journey-story.reverse .story-panel{
+    transform:translateY(46px);
+  }
+.pk-client-scope .journey-line{
+    top:auto;
+    bottom:108px;
+    left:50%;
+    transform:translateX(-50%);
+  }
+.pk-client-scope .journey-story.reverse .journey-line{
+    right:auto;
+    left:50%;
+  }
+.pk-client-scope .journey-story.is-visible .journey-line{
+    width:72%;
+  }
+.pk-client-scope .story-number,.pk-client-scope .journey-story.reverse .story-number{
+    top:-56px;
+    right:auto;
+    left:10px;
+  }}
+@media (max-width:720px){.pk-client-scope .journeys-section{
+    padding:76px 0 88px;
+  }
+.pk-client-scope .container{
+    width:calc(100% - 22px);
+  }
+.pk-client-scope .section-heading{
+    margin-bottom:62px;
+  }
+.pk-client-scope .eyebrow{
+    margin-bottom:28px;
+    font-size:.63rem;
+  }
+.pk-client-scope .eyebrow::before,.pk-client-scope .eyebrow::after{
+    width:24px;
+  }
+.pk-client-scope .section-heading h1{
+    font-size:clamp(2.8rem,13vw,4rem);
+    line-height:1.03;
+  }
+.pk-client-scope .section-heading h1 .highlight{
+    margin-top:17px;
+    padding:9px 16px 12px;
+    border-radius:14px;
+  }
+.pk-client-scope .section-heading p{
+    margin-top:29px;
+    padding-inline:4px;
+    font-size:.91rem;
+    line-height:1.63;
+  }
+.pk-client-scope .journeys-list{
+    gap:68px;
+  }
+.pk-client-scope .story-number,.pk-client-scope .journey-story.reverse .story-number{
+    top:-34px;
+    left:2px;
+    font-size:7.5rem;
+  }
+.pk-client-scope .story-photo{
+    min-height:390px;
+    border-radius:22px;
+  }
+.pk-client-scope .story-photo img{
+    min-height:390px;
+  }
+.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    width:calc(100% - 18px);
+    margin:-48px auto 0;
+    padding:25px 20px 0;
+    border-radius:21px;
+  }
+.pk-client-scope .story-topline{
+    align-items:flex-start;
+    margin-bottom:19px;
+  }
+.pk-client-scope .story-panel h2{
+    font-size:1.75rem;
+  }
+.pk-client-scope .quote{
+    margin-top:23px;
+    font-size:1.02rem;
+  }
+.pk-client-scope .journey-label{
+    margin-top:23px;
+  }
+.pk-client-scope .journey-copy{
+    font-size:.82rem;
+  }
+.pk-client-scope .help-grid{
+    margin-top:19px;
+    margin-bottom:23px;
+  }
+.pk-client-scope .help-grid span{
+    font-size:.72rem;
+  }
+.pk-client-scope .outcome{
+    min-height:70px;
+    margin:0 -20px;
+    padding:15px 20px;
+    border-radius:0 0 21px 21px;
+  }
+.pk-client-scope .journey-line{
+    bottom:85px;
+  }
+.pk-client-scope .journey-story.is-visible .journey-line{
+    width:78%;
+  }}
+/* V5: remove connector line and align desktop photo/panel edges */
+.pk-client-scope .journey-line{
+  display: none !important;
+}
+@media (min-width: 1121px){.pk-client-scope .journey-story,.pk-client-scope .journey-story.reverse{
+    min-height: 560px;
+    max-width: 1360px;
+    margin-inline: auto;
+    align-items: stretch;
+  }
+.pk-client-scope .journey-story{
+    grid-template-columns: minmax(0, 1fr) minmax(430px, 0.68fr);
+  }
+.pk-client-scope .journey-story.reverse{
+    grid-template-columns: minmax(430px, 0.68fr) minmax(0, 1fr);
+  }
+.pk-client-scope .story-photo{
+    height: 560px;
+    min-height: 0;
+  }
+.pk-client-scope .story-photo img{
+    height: 100%;
+    min-height: 0;
+  }
+.pk-client-scope .story-panel{
+    min-height: 0;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -62px;
+    padding: 38px 42px 0;
+  }
+.pk-client-scope .journey-story.reverse .story-panel{
+    margin-right: -62px;
+    margin-left: 0;
+  }
+.pk-client-scope .story-topline{
+    margin-bottom: 19px;
+  }
+.pk-client-scope .story-panel h2{
+    font-size: 2.2rem;
+  }
+.pk-client-scope .quote{
+    margin-top: 24px;
+    font-size: 1.08rem;
+  }
+.pk-client-scope .journey-label{
+    margin-top: 22px;
+  }
+.pk-client-scope .journey-copy{
+    font-size: 0.84rem;
+    line-height: 1.56;
+  }
+.pk-client-scope .help-grid{
+    gap: 7px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+.pk-client-scope .help-grid span{
+    font-size: 0.72rem;
+  }
+.pk-client-scope .outcome{
+    margin-top: auto;
+    margin-right: -42px;
+    margin-left: -42px;
+    padding-right: 42px;
+    padding-left: 42px;
+  }}
+/* V6: mobile-only optimisation — desktop remains unchanged */
+@media (max-width: 720px){.pk-client-scope .journeys-section{
+    padding: 64px 0 74px;
+  }
+.pk-client-scope .container{
+    width: calc(100% - 18px);
+  }
+.pk-client-scope .section-heading{
+    margin-bottom: 49px;
+  }
+.pk-client-scope .eyebrow{
+    gap: 8px;
+    margin-bottom: 21px;
+    font-size: 0.57rem;
+    letter-spacing: 0.13em;
+  }
+.pk-client-scope .eyebrow::before,.pk-client-scope .eyebrow::after{
+    width: 21px;
+  }
+.pk-client-scope .section-heading h1{
+    font-size: clamp(2.35rem, 11.2vw, 3.2rem);
+    line-height: 1.04;
+    letter-spacing: -0.058em;
+  }
+.pk-client-scope .section-heading h1 .highlight{
+    margin-top: 13px;
+    padding: 8px 13px 10px;
+    border-radius: 12px;
+  }
+.pk-client-scope .section-heading p{
+    max-width: 520px;
+    margin-top: 23px;
+    padding-inline: 3px;
+    font-size: 0.83rem;
+    line-height: 1.56;
+  }
+.pk-client-scope .journeys-list{
+    gap: 52px;
+  }
+.pk-client-scope .journey-story,.pk-client-scope .journey-story.reverse{
+    min-width: 0;
+  }
+/* Always show the customer photo first on mobile. */
+.pk-client-scope .journey-story.reverse .story-photo{
+    order: 1;
+  }
+.pk-client-scope .journey-story.reverse .story-panel{
+    order: 2;
+  }
+.pk-client-scope .story-number,.pk-client-scope .journey-story.reverse .story-number{
+    top: -22px;
+    right: auto;
+    left: 0;
+    font-size: 5.15rem;
+  }
+.pk-client-scope .story-photo{
+    width: 100%;
+    height: 292px;
+    min-height: 0;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(71, 38, 20, 0.14);
+  }
+.pk-client-scope .story-photo img{
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-position: center 45%;
+  }
+.pk-client-scope .journey-story:nth-child(1) .story-photo img{
+    object-position: center 48%;
+  }
+.pk-client-scope .journey-story:nth-child(2) .story-photo img{
+    object-position: center 45%;
+  }
+.pk-client-scope .journey-story:nth-child(3) .story-photo img{
+    object-position: center 43%;
+  }
+.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    width: calc(100% - 10px);
+    min-height: 0;
+    margin: -30px auto 0;
+    padding: 19px 15px 0;
+    border-radius: 17px;
+    box-shadow: 0 18px 42px rgba(75, 41, 23, 0.13);
+    transform: translateY(28px);
+  }
+.pk-client-scope .story-topline{
+    gap: 9px;
+    margin-bottom: 14px;
+  }
+.pk-client-scope .destination{
+    gap: 6px;
+    font-size: 0.56rem;
+    letter-spacing: 0.08em;
+  }
+.pk-client-scope .flag{
+    font-size: 0.94rem;
+  }
+.pk-client-scope .route{
+    padding: 6px 8px;
+    font-size: 0.49rem;
+    letter-spacing: 0.06em;
+  }
+.pk-client-scope .story-panel h2{
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    line-height: 1.05;
+  }
+.pk-client-scope .countries{
+    font-size: 0.68rem;
+  }
+.pk-client-scope .quote{
+    margin-top: 18px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+.pk-client-scope .quote::before{
+    top: -9px;
+    font-size: 2.55rem;
+  }
+.pk-client-scope .journey-label{
+    margin-top: 19px;
+    margin-bottom: 7px;
+    font-size: 0.54rem;
+  }
+.pk-client-scope .journey-copy{
+    font-size: 0.75rem;
+    line-height: 1.51;
+  }
+.pk-client-scope .help-grid{
+    gap: 6px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+  }
+.pk-client-scope .help-grid span{
+    gap: 8px;
+    font-size: 0.67rem;
+    line-height: 1.36;
+  }
+.pk-client-scope .help-grid span::before{
+    width: 19px;
+    height: 19px;
+    font-size: 0.54rem;
+  }
+.pk-client-scope .outcome{
+    min-height: 62px;
+    margin: auto -15px 0;
+    padding: 12px 15px;
+    border-radius: 0 0 17px 17px;
+  }
+.pk-client-scope .outcome strong{
+    margin-bottom: 3px;
+    font-size: 0.76rem;
+  }
+.pk-client-scope .outcome small{
+    max-width: 235px;
+    font-size: 0.57rem;
+    line-height: 1.32;
+  }
+.pk-client-scope .outcome-mark{
+    width: 34px;
+    height: 34px;
+    font-size: 0.8rem;
+  }}
+@media (max-width: 430px){.pk-client-scope .journeys-section{
+    padding-top: 58px;
+  }
+.pk-client-scope .container{
+    width: calc(100% - 14px);
+  }
+.pk-client-scope .section-heading{
+    margin-bottom: 44px;
+  }
+.pk-client-scope .section-heading h1{
+    font-size: clamp(2.15rem, 11vw, 2.8rem);
+  }
+.pk-client-scope .section-heading p{
+    font-size: 0.79rem;
+  }
+.pk-client-scope .journeys-list{
+    gap: 46px;
+  }
+.pk-client-scope .story-photo{
+    height: 258px;
+  }
+.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    width: calc(100% - 6px);
+    margin-top: -25px;
+    padding: 17px 13px 0;
+  }
+.pk-client-scope .story-topline{
+    flex-wrap: wrap;
+  }
+.pk-client-scope .story-panel h2{
+    font-size: 1.3rem;
+  }
+.pk-client-scope .quote{
+    font-size: 0.85rem;
+  }
+.pk-client-scope .journey-copy{
+    font-size: 0.72rem;
+  }
+.pk-client-scope .help-grid span{
+    font-size: 0.64rem;
+  }
+.pk-client-scope .outcome{
+    margin-right: -13px;
+    margin-left: -13px;
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+.pk-client-scope .outcome small{
+    max-width: 205px;
+  }}
+@media (prefers-reduced-motion:reduce){.pk-client-scope *,.pk-client-scope *::before,.pk-client-scope *::after{
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+.pk-client-scope .story-number,.pk-client-scope .story-photo,.pk-client-scope .story-panel,.pk-client-scope .quote{
+    opacity:1!important;
+    transform:none!important;
+  }
+.pk-client-scope .journey-line{
+    width:64%!important;
+  }}
+/* V7: larger body text inside the three customer boxes — desktop only */
+@media (min-width: 1121px){.pk-client-scope .quote{
+    font-size: 1.18rem;
+    line-height: 1.52;
+  }
+.pk-client-scope .journey-copy{
+    font-size: 0.96rem;
+    line-height: 1.62;
+  }
+.pk-client-scope .help-grid span{
+    font-size: 0.82rem;
+    line-height: 1.46;
+  }
+.pk-client-scope .outcome small{
+    font-size: 0.76rem;
+    line-height: 1.44;
+  }}
+/* V11: emphasise only the actual country label beside the flag and the visa badge */
+.pk-client-scope .destination{
+  color: #3f3833;
+  font-size: 1.02rem;
+  font-weight: 950;
+  line-height: 1.2;
+  letter-spacing: 0.055em;
+}
+.pk-client-scope .route{
+  padding: 9px 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff6900 0%, var(--orange) 58%, #df4700 100%);
+  border-color: rgba(247,87,0,.30);
+  box-shadow: 0 9px 19px rgba(247,87,0,.18);
+  font-size: 0.69rem;
+  font-weight: 950;
+}
+@media (max-width: 720px){.pk-client-scope .destination{
+    color: #3f3833;
+    font-size: 0.80rem;
+    font-weight: 950;
+    line-height: 1.2;
+    letter-spacing: 0.045em;
+  }
+.pk-client-scope .route{
+    padding: 7px 10px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff6900 0%, var(--orange) 58%, #df4700 100%);
+    border-color: rgba(247,87,0,.30);
+    box-shadow: 0 7px 15px rgba(247,87,0,.16);
+    font-size: 0.57rem;
+    font-weight: 950;
+  }}
+/* V12: only the requested outcome, Australia mobile alignment, and country-label fixes */
+/* Restore the actual country labels beside the flags to orange. */
+.pk-client-scope .destination{
+  color: var(--orange-dark) !important;
+}
+/* Desktop only: fully contain and close the orange outcome footer inside each card. */
+@media (min-width: 1121px){.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    overflow: hidden;
+  }
+.pk-client-scope .outcome{
+    margin-right: -43px;
+    margin-left: -43px;
+    border-radius: 0;
+  }}
+/* Mobile only: centre the country row vertically and align Australia like the other cards. */
+@media (max-width: 720px){.pk-client-scope .story-topline{
+    align-items: center;
+  }
+.pk-client-scope .journey-story:nth-child(2){
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.pk-client-scope .journey-story:nth-child(2) .story-photo,.pk-client-scope .journey-story:nth-child(2) .story-panel{
+    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }}
+/* V13: correct the desktop outcome footer without changing other styling */
+@media (min-width: 1121px){.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    height: auto !important;
+    min-height: 560px !important;
+    overflow: hidden !important;
+  }
+.pk-client-scope .outcome{
+    flex: 0 0 auto !important;
+    min-height: 94px !important;
+    margin: auto -42px 0 !important;
+    padding: 18px 42px 20px !important;
+    border-radius: 0 0 27px 27px !important;
+  }
+.pk-client-scope .outcome > div{
+    min-width: 0 !important;
+  }
+.pk-client-scope .outcome small{
+    max-width: none !important;
+  }}
+/* V14: desktop only — keep photo and orange footer perfectly level */
+@media (min-width: 1121px){.pk-client-scope .journey-story,.pk-client-scope .journey-story.reverse{
+    align-items: stretch !important;
+  }
+.pk-client-scope .story-photo{
+    height: auto !important;
+    min-height: 560px !important;
+    align-self: stretch !important;
+  }
+.pk-client-scope .story-photo img{
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 560px !important;
+    object-fit: cover !important;
+  }
+.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    align-self: stretch !important;
+  }}
+/* V15: mobile only — consistent card positioning and readable outcome footer */
+@media (max-width: 720px){.pk-client-scope .journey-story,.pk-client-scope .journey-story.reverse{
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+.pk-client-scope .story-photo,.pk-client-scope .journey-story.reverse .story-photo{
+    width: 100% !important;
+    justify-self: center !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    width: calc(100% - 10px) !important;
+    justify-self: center !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    overflow: hidden !important;
+  }
+.pk-client-scope .outcome{
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 38px !important;
+    align-items: center !important;
+    gap: 12px !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: auto -15px 0 !important;
+    padding: 16px 15px 17px !important;
+    border-radius: 0 0 17px 17px !important;
+  }
+.pk-client-scope .outcome > div{
+    min-width: 0 !important;
+  }
+.pk-client-scope .outcome strong{
+    margin-bottom: 5px !important;
+    font-size: 0.88rem !important;
+    line-height: 1.24 !important;
+  }
+.pk-client-scope .outcome small{
+    max-width: none !important;
+    font-size: 0.68rem !important;
+    line-height: 1.45 !important;
+    overflow-wrap: anywhere !important;
+  }
+.pk-client-scope .outcome-mark{
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 0.86rem !important;
+  }}
+@media (max-width: 430px){.pk-client-scope .story-panel,.pk-client-scope .journey-story.reverse .story-panel{
+    width: calc(100% - 6px) !important;
+  }
+.pk-client-scope .outcome{
+    grid-template-columns: minmax(0, 1fr) 36px !important;
+    gap: 10px !important;
+    margin-right: -13px !important;
+    margin-left: -13px !important;
+    padding: 15px 13px 16px !important;
+  }
+.pk-client-scope .outcome strong{
+    font-size: 0.84rem !important;
+  }
+.pk-client-scope .outcome small{
+    font-size: 0.65rem !important;
+    line-height: 1.43 !important;
+  }
+.pk-client-scope .outcome-mark{
+    width: 36px !important;
+    height: 36px !important;
+  }}

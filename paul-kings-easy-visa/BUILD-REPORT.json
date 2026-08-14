@@ -1,0 +1,55 @@
+{
+  "purpose": "File-structure reorganisation only; preserve approved desktop/mobile visual output and behavior.",
+  "section_content_parity": {
+    "hero": "exact HTML content preserved",
+    "how-we-help": "exact HTML content preserved",
+    "how-it-works": "exact HTML content preserved",
+    "client-stories": "exact rendered HTML preserved; data moved to data/client-stories.ts",
+    "meet-paul": "exact HTML content preserved",
+    "faq": "exact rendered HTML preserved; data moved to data/faq.ts",
+    "contact": "exact rendered HTML preserved; business details moved to data/business.ts"
+  },
+  "css": "Original combined CSS split by existing unique .pk-* scope. Rule declarations preserved; integration fixes appended to their owning section.",
+  "javascript": "Existing hero, section reveal, process scroll, client reveal, Meet Paul reveal and FAQ accordion logic moved from one HomePage effect into owning section components.",
+  "images": [
+    {
+      "path": "public/images/home-page/paul-kings-logo.png",
+      "unchanged_from_fixed": true,
+      "bytes": 312951
+    },
+    {
+      "path": "public/images/home-page/british-passport.png",
+      "unchanged_from_fixed": true,
+      "bytes": 755136
+    },
+    {
+      "path": "public/images/home-page/paul-king-portrait.png",
+      "unchanged_from_fixed": true,
+      "bytes": 115250
+    },
+    {
+      "path": "public/images/home-page/client-uk-couple.png",
+      "unchanged_from_fixed": true,
+      "bytes": 2148170
+    },
+    {
+      "path": "public/images/home-page/pattaya-office-map.png",
+      "unchanged_from_fixed": true,
+      "bytes": 1154020
+    },
+    {
+      "path": "public/images/home-page/client-italy-couple.png",
+      "unchanged_from_fixed": true,
+      "bytes": 1828750
+    },
+    {
+      "path": "public/images/home-page/client-australia-couple.png",
+      "unchanged_from_fixed": true,
+      "bytes": 1879849
+    }
+  ],
+  "local_image_refs_missing": [],
+  "typescript_syntax_check": "26 TS/TSX source files transpile without syntax diagnostics using TypeScript 5.8.3.",
+  "css_brace_check": "All CSS files balanced.",
+  "npm_build_check": "Not completed in this environment because npm install timed out before dependencies were available. Vercel will perform the dependency install/build from package.json."
+}

@@ -1,0 +1,1255 @@
+/* ===== Contact us - section 7 .html ===== */
+.pk-contact-scope{
+  --orange:#f75700;
+  --orange-dark:#d84600;
+  --ink:#17130f;
+  --muted:#665e57;
+  --cream:#fff9f4;
+  --white:#fff;
+  --line:rgba(43,29,20,.10);
+  --shadow:0 24px 58px rgba(65,38,21,.11);
+  --max:1400px;
+}
+.pk-contact-scope *{box-sizing:border-box}
+.pk-contact-scope{scroll-behavior:smooth}
+.pk-contact-scope{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 8% 12%,rgba(247,87,0,.07),transparent 23rem),
+    radial-gradient(circle at 92% 16%,rgba(215,168,63,.10),transparent 24rem),
+    linear-gradient(180deg,#fffdfa 0%,var(--cream) 100%);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.pk-contact-scope a{color:inherit;text-decoration:none}
+.pk-contact-scope .contact-section{
+  position:relative;
+  min-height:100vh;
+  padding:108px 0 118px;
+  overflow:hidden;
+}
+.pk-contact-scope .contact-section::before,.pk-contact-scope .contact-section::after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(247,87,0,.10);
+  border-radius:50%;
+  pointer-events:none;
+}
+.pk-contact-scope .contact-section::before{
+  width:420px;
+  height:420px;
+  left:-240px;
+  top:140px;
+}
+.pk-contact-scope .contact-section::after{
+  width:340px;
+  height:340px;
+  right:-190px;
+  bottom:80px;
+}
+.pk-contact-scope .container{
+  position:relative;
+  z-index:1;
+  width:min(calc(100% - 84px),var(--max));
+  margin-inline:auto;
+}
+.pk-contact-scope .section-heading{
+  max-width:1040px;
+  margin:0 auto 64px;
+  text-align:center;
+}
+.pk-contact-scope .section-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:22px;
+  color:var(--orange);
+  font-size:.72rem;
+  font-weight:950;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .section-eyebrow::before,.pk-contact-scope .section-eyebrow::after{
+  content:"";
+  width:31px;
+  height:2px;
+  background:var(--orange);
+}
+.pk-contact-scope .section-heading h1{
+  margin:0;
+  font-size:clamp(3.8rem,6.2vw,6.8rem);
+  line-height:.95;
+  letter-spacing:-.072em;
+}
+.pk-contact-scope .section-heading h1 span{
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 17px 12px;
+  color:#fff;
+  background:var(--orange);
+  border-radius:11px;
+  box-shadow:0 14px 28px rgba(247,87,0,.18);
+}
+.pk-contact-scope .section-heading p{
+  max-width:930px;
+  margin:31px auto 0;
+  color:var(--muted);
+  font-size:1.24rem;
+  line-height:1.7;
+}
+/* No shared outer panel: each side keeps its own natural height */
+.pk-contact-scope .contact-layout{
+  display:grid;
+  grid-template-columns:minmax(430px,.86fr) minmax(620px,1.14fr);
+  gap:24px;
+  align-items:start;
+}
+.pk-contact-scope .contact-card,.pk-contact-scope .map-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  box-shadow:var(--shadow);
+}
+.pk-contact-scope .contact-card{
+  position:relative;
+  overflow:hidden;
+  padding:42px;
+}
+.pk-contact-scope .contact-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:5px;
+  background:linear-gradient(90deg,var(--orange),#ff8a42,#d7a83f);
+}
+.pk-contact-scope .office-label{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:20px;
+  color:var(--orange);
+  font-size:.72rem;
+  font-weight:950;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .office-label::before{
+  content:"";
+  width:27px;
+  height:2px;
+  background:var(--orange);
+}
+.pk-contact-scope .contact-card h2{
+  max-width:560px;
+  margin:0;
+  font-size:2.85rem;
+  line-height:1.04;
+  letter-spacing:-.052em;
+}
+.pk-contact-scope .contact-card > p{
+  margin:18px 0 28px;
+  color:var(--muted);
+  font-size:1.03rem;
+  line-height:1.65;
+}
+.pk-contact-scope .address-block{
+  display:grid;
+  grid-template-columns:54px minmax(0,1fr);
+  gap:16px;
+  align-items:start;
+  padding:22px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.pk-contact-scope .info-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  color:var(--orange);
+  background:#fff4ec;
+  border:1px solid rgba(247,87,0,.14);
+  border-radius:14px;
+}
+.pk-contact-scope .info-icon svg{
+  width:24px;
+  height:24px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.pk-contact-scope .info-copy small{
+  display:block;
+  margin-bottom:6px;
+  color:var(--muted);
+  font-size:.64rem;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .info-copy strong,.pk-contact-scope .info-copy a{
+  display:block;
+  color:var(--ink);
+  font-size:1.05rem;
+  font-weight:780;
+  line-height:1.48;
+}
+.pk-contact-scope .phone-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin:24px 0;
+}
+.pk-contact-scope .phone-card{
+  display:block;
+  min-height:148px;
+  padding:22px 20px;
+  border-radius:18px;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.pk-contact-scope .phone-card:hover{
+  transform:translateY(-2px);
+}
+.pk-contact-scope .phone-card.thai{
+  color:#fff;
+  background:linear-gradient(145deg,#ff6800,var(--orange));
+  box-shadow:0 16px 30px rgba(247,87,0,.20);
+}
+.pk-contact-scope .phone-card.english{
+  color:var(--ink);
+  background:#fff6ef;
+  border:1px solid rgba(247,87,0,.18);
+}
+.pk-contact-scope .phone-card small{
+  display:block;
+  margin-bottom:13px;
+  font-size:.72rem;
+  font-weight:950;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .phone-card.thai small{
+  color:#fff1bd;
+}
+.pk-contact-scope .phone-card.english small{
+  color:var(--orange);
+}
+.pk-contact-scope .phone-card strong{
+  display:block;
+  font-size:1.35rem;
+  line-height:1.28;
+  letter-spacing:-.02em;
+}
+.pk-contact-scope .phone-card span{
+  display:block;
+  margin-top:10px;
+  font-size:.78rem;
+  font-weight:750;
+  opacity:.76;
+}
+.pk-contact-scope .small-details{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+  border-top:1px solid var(--line);
+}
+.pk-contact-scope .detail-row{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  gap:13px;
+  align-items:center;
+  padding:17px 0;
+  border-bottom:1px solid var(--line);
+}
+.pk-contact-scope .detail-row .info-icon{
+  width:40px;
+  height:40px;
+  border-radius:12px;
+}
+.pk-contact-scope .detail-row .info-icon svg{
+  width:20px;
+  height:20px;
+}
+.pk-contact-scope .detail-row small{
+  display:block;
+  margin-bottom:4px;
+  color:var(--muted);
+  font-size:.60rem;
+  font-weight:950;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .detail-row a{
+  font-size:1rem;
+  font-weight:800;
+  line-height:1.42;
+}
+.pk-contact-scope .detail-row a:hover{
+  color:var(--orange);
+}
+/* Map panel */
+.pk-contact-scope .map-card{
+  padding:22px;
+}
+.pk-contact-scope .map-heading{
+  padding:4px 4px 18px;
+}
+.pk-contact-scope .map-heading small{
+  display:block;
+  margin-bottom:7px;
+  color:var(--orange);
+  font-size:.68rem;
+  font-weight:950;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .map-heading h3{
+  margin:0;
+  font-size:2.05rem;
+  line-height:1.08;
+  letter-spacing:-.045em;
+}
+.pk-contact-scope .map-heading p{
+  max-width:650px;
+  margin:11px 0 0;
+  color:var(--muted);
+  font-size:.96rem;
+  line-height:1.55;
+}
+.pk-contact-scope .map-frame{
+  overflow:hidden;
+  background:#ffd86b;
+  border:1px solid rgba(43,29,20,.10);
+  border-radius:18px;
+}
+.pk-contact-scope .map-frame img{
+  width:100%;
+  height:auto;
+  aspect-ratio:1536/851;
+  display:block;
+  object-fit:contain;
+}
+.pk-contact-scope .google-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-top:15px;
+  padding:16px 17px;
+  background:#f8f9fa;
+  border:1px solid #e0e0e0;
+  border-radius:15px;
+}
+.pk-contact-scope .google-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+.pk-contact-scope .google-mark{
+  width:40px;
+  height:40px;
+  flex:0 0 auto;
+}
+.pk-contact-scope .google-copy strong{
+  display:block;
+  margin-bottom:3px;
+  color:#202124;
+  font-size:.96rem;
+}
+.pk-contact-scope .google-copy span{
+  display:block;
+  color:#5f6368;
+  font-size:.74rem;
+}
+.pk-contact-scope .google-button{
+  flex:0 0 auto;
+  min-height:48px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px 18px;
+  color:#fff;
+  background:#1a73e8;
+  border-radius:10px;
+  box-shadow:0 8px 18px rgba(26,115,232,.20);
+  font-size:.78rem;
+  font-weight:900;
+}
+.pk-contact-scope .final-strip{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  margin-top:24px;
+  padding:32px 40px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 86% 0%,rgba(255,255,255,.19),transparent 18rem),
+    linear-gradient(120deg,#ff6800 0%,var(--orange) 58%,#db4300 100%);
+  border-radius:24px;
+  box-shadow:0 24px 55px rgba(247,87,0,.18);
+}
+.pk-contact-scope .final-strip strong{
+  display:block;
+  margin-bottom:7px;
+  color:#fff4c9;
+  font-size:.68rem;
+  font-weight:950;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.pk-contact-scope .final-strip p{
+  max-width:870px;
+  margin:0;
+  font-size:1.18rem;
+  font-weight:760;
+  line-height:1.45;
+}
+.pk-contact-scope .final-button{
+  min-width:215px;
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px 22px;
+  color:var(--orange-dark);
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 15px 30px rgba(101,31,0,.20);
+  font-size:.84rem;
+  font-weight:950;
+}
+@media (max-width:1080px){.pk-contact-scope .contact-layout{
+    grid-template-columns:1fr;
+  }}
+@media (max-width:720px){.pk-contact-scope .contact-section{
+    padding:74px 0 82px;
+  }
+.pk-contact-scope .container{
+    width:calc(100% - 20px);
+  }
+.pk-contact-scope .section-heading{
+    margin-bottom:40px;
+    padding-inline:7px;
+  }
+.pk-contact-scope .section-eyebrow{
+    margin-bottom:17px;
+    font-size:.56rem;
+  }
+.pk-contact-scope .section-eyebrow::before,.pk-contact-scope .section-eyebrow::after{
+    width:22px;
+  }
+.pk-contact-scope .section-heading h1{
+    font-size:2.82rem;
+    line-height:.98;
+  }
+.pk-contact-scope .section-heading h1 span{
+    margin-top:9px;
+    padding:6px 11px 8px;
+    border-radius:8px;
+  }
+.pk-contact-scope .section-heading p{
+    margin-top:22px;
+    font-size:.96rem;
+    line-height:1.62;
+  }
+.pk-contact-scope .contact-layout{
+    gap:13px;
+  }
+.pk-contact-scope .contact-card,.pk-contact-scope .map-card{
+    border-radius:19px;
+  }
+.pk-contact-scope .contact-card{
+    padding:28px 18px 22px;
+  }
+.pk-contact-scope .office-label{
+    margin-bottom:15px;
+    font-size:.57rem;
+  }
+.pk-contact-scope .contact-card h2{
+    font-size:2.15rem;
+  }
+.pk-contact-scope .contact-card > p{
+    margin:14px 0 22px;
+    font-size:.88rem;
+  }
+.pk-contact-scope .address-block{
+    grid-template-columns:44px minmax(0,1fr);
+    gap:12px;
+    padding:17px 0;
+  }
+.pk-contact-scope .info-icon{
+    width:41px;
+    height:41px;
+    border-radius:12px;
+  }
+.pk-contact-scope .info-copy strong,.pk-contact-scope .info-copy a{
+    font-size:.91rem;
+  }
+.pk-contact-scope .phone-grid{
+    grid-template-columns:1fr;
+    gap:10px;
+    margin:18px 0;
+  }
+.pk-contact-scope .phone-card{
+    min-height:0;
+    padding:18px 17px;
+    border-radius:15px;
+  }
+.pk-contact-scope .phone-card small{
+    margin-bottom:8px;
+    font-size:.62rem;
+  }
+.pk-contact-scope .phone-card strong{
+    font-size:1.22rem;
+  }
+.pk-contact-scope .phone-card span{
+    margin-top:7px;
+    font-size:.72rem;
+  }
+.pk-contact-scope .detail-row{
+    padding:14px 0;
+  }
+.pk-contact-scope .detail-row a{
+    font-size:.88rem;
+  }
+.pk-contact-scope .map-card{
+    padding:11px;
+  }
+.pk-contact-scope .map-heading{
+    padding:5px 5px 13px;
+  }
+.pk-contact-scope .map-heading h3{
+    font-size:1.55rem;
+  }
+.pk-contact-scope .map-heading p{
+    margin-top:8px;
+    font-size:.80rem;
+  }
+.pk-contact-scope .map-frame{
+    border-radius:13px;
+  }
+.pk-contact-scope .google-bar{
+    gap:10px;
+    margin-top:10px;
+    padding:12px;
+    border-radius:12px;
+  }
+.pk-contact-scope .google-mark{
+    width:34px;
+    height:34px;
+  }
+.pk-contact-scope .google-copy strong{
+    font-size:.82rem;
+  }
+.pk-contact-scope .google-copy span{
+    max-width:150px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-size:.64rem;
+  }
+.pk-contact-scope .google-button{
+    min-height:42px;
+    padding:10px 12px;
+    font-size:.67rem;
+  }
+.pk-contact-scope .final-strip{
+    grid-template-columns:1fr;
+    gap:18px;
+    margin-top:13px;
+    padding:25px 20px 22px;
+    border-radius:19px;
+  }
+.pk-contact-scope .final-strip p{
+    font-size:1rem;
+  }
+.pk-contact-scope .final-button{
+    width:100%;
+    min-height:55px;
+  }}
+/* V5: make the main heading visible sooner and equalise both desktop cards */
+.pk-contact-scope .contact-section{
+  padding: 66px 0 86px !important;
+}
+.pk-contact-scope .section-heading{
+  margin-bottom: 42px !important;
+}
+.pk-contact-scope .section-heading h1{
+  font-size: clamp(3.5rem, 5.6vw, 6rem) !important;
+}
+.pk-contact-scope .section-heading p{
+  margin-top: 24px !important;
+  font-size: 1.12rem !important;
+  line-height: 1.62 !important;
+}
+@media (min-width: 1081px){.pk-contact-scope .contact-layout{
+    align-items: stretch !important;
+  }
+.pk-contact-scope .contact-card,.pk-contact-scope .map-card{
+    height: 100% !important;
+  }
+.pk-contact-scope .map-card{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+.pk-contact-scope .map-heading{
+    flex: 0 0 auto !important;
+  }
+.pk-contact-scope .map-frame{
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: stretch !important;
+    background: #ffd86b !important;
+  }
+.pk-contact-scope .map-frame a{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+  }
+.pk-contact-scope .map-frame img{
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    background: #ffd86b !important;
+  }
+.pk-contact-scope .google-bar{
+    flex: 0 0 auto !important;
+  }}
+@media (max-width: 720px){.pk-contact-scope .contact-section{
+    padding: 54px 0 72px !important;
+  }
+.pk-contact-scope .section-heading{
+    margin-bottom: 30px !important;
+  }
+.pk-contact-scope .section-heading h1{
+    font-size: 2.72rem !important;
+  }
+.pk-contact-scope .section-heading p{
+    margin-top: 18px !important;
+    font-size: .94rem !important;
+  }}
+/* V6: WhatsApp and Google Business badges on the left */
+.pk-contact-scope .contact-platforms{
+  display: grid;
+  gap: 11px;
+  margin: 22px 0 24px;
+}
+.pk-contact-scope .platform-card{
+  display: grid;
+  grid-template-columns: 48px minmax(0,1fr) 28px;
+  gap: 14px;
+  align-items: center;
+  min-height: 82px;
+  padding: 14px 15px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(58,34,19,.055);
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease;
+}
+.pk-contact-scope .platform-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 15px 29px rgba(58,34,19,.09);
+}
+.pk-contact-scope .whatsapp-card:hover{
+  border-color: rgba(37,211,102,.34);
+}
+.pk-contact-scope .google-business-card:hover{
+  border-color: rgba(66,133,244,.30);
+}
+.pk-contact-scope .platform-logo{
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 13px;
+}
+.pk-contact-scope .platform-logo svg{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.pk-contact-scope .google-business-logo{
+  padding: 5px;
+  background: #f8f9fa;
+  border: 1px solid #e4e7eb;
+}
+.pk-contact-scope .platform-copy{
+  min-width: 0;
+}
+.pk-contact-scope .platform-copy small{
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: .57rem;
+  font-weight: 950;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.pk-contact-scope .platform-copy strong{
+  display: block;
+  margin-bottom: 2px;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.pk-contact-scope .platform-copy span{
+  display: block;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.35;
+}
+.pk-contact-scope .platform-arrow{
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  justify-self: end;
+  border-radius: 50%;
+  font-size: .84rem;
+  font-weight: 900;
+}
+.pk-contact-scope .whatsapp-card .platform-arrow{
+  color: #128C4A;
+  background: rgba(37,211,102,.12);
+}
+.pk-contact-scope .google-business-card .platform-arrow{
+  color: #1a73e8;
+  background: rgba(66,133,244,.11);
+}
+@media (max-width: 720px){.pk-contact-scope .contact-platforms{
+    margin: 18px 0;
+    gap: 9px;
+  }
+.pk-contact-scope .platform-card{
+    grid-template-columns: 43px minmax(0,1fr) 26px;
+    gap: 11px;
+    min-height: 74px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+.pk-contact-scope .platform-logo{
+    width: 41px;
+    height: 41px;
+    border-radius: 11px;
+  }
+.pk-contact-scope .platform-copy strong{
+    font-size: .91rem;
+  }
+.pk-contact-scope .platform-copy span{
+    font-size: .66rem;
+  }}
+/* V7: compact WhatsApp and Google Business buttons below email */
+.pk-contact-scope .compact-platforms{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 11px !important;
+  margin: 18px 0 0 !important;
+}
+.pk-contact-scope .compact-platform-button{
+  min-height: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 11px !important;
+  padding: 13px 15px !important;
+  border-radius: 15px !important;
+  background: #fff !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: 0 10px 22px rgba(58,34,19,.055) !important;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease !important;
+}
+.pk-contact-scope .compact-platform-button:hover{
+  transform: translateY(-2px) !important;
+  box-shadow: 0 15px 28px rgba(58,34,19,.09) !important;
+}
+.pk-contact-scope .whatsapp-button:hover{
+  border-color: rgba(37,211,102,.36) !important;
+}
+.pk-contact-scope .google-business-button:hover{
+  border-color: rgba(66,133,244,.32) !important;
+}
+.pk-contact-scope .compact-platform-logo{
+  width: 42px !important;
+  height: 42px !important;
+  flex: 0 0 42px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+.pk-contact-scope .compact-platform-logo svg{
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+.pk-contact-scope .google-business-official{
+  padding: 4px !important;
+  background: #f8f9fa !important;
+  border: 1px solid #e2e5e9 !important;
+  border-radius: 11px !important;
+}
+.pk-contact-scope .compact-platform-button strong{
+  color: var(--ink) !important;
+  font-size: .92rem !important;
+  line-height: 1.15 !important;
+  text-align: left !important;
+}
+@media (max-width: 720px){.pk-contact-scope .compact-platforms{
+    gap: 8px !important;
+    margin-top: 15px !important;
+  }
+.pk-contact-scope .compact-platform-button{
+    min-height: 64px !important;
+    gap: 8px !important;
+    padding: 10px !important;
+    border-radius: 13px !important;
+  }
+.pk-contact-scope .compact-platform-logo{
+    width: 36px !important;
+    height: 36px !important;
+    flex-basis: 36px !important;
+  }
+.pk-contact-scope .compact-platform-button strong{
+    font-size: .78rem !important;
+  }}
+/* V8: icon-only WhatsApp and Google Business links */
+.pk-contact-scope .icon-only-platforms{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  margin: 16px 0 0 !important;
+}
+.pk-contact-scope .platform-icon-link{
+  width: 54px !important;
+  height: 54px !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 15px !important;
+  box-shadow: none !important;
+  transition:
+    transform .2s ease,
+    filter .2s ease !important;
+}
+.pk-contact-scope .platform-icon-link:hover{
+  transform: translateY(-2px) scale(1.03) !important;
+  filter: drop-shadow(0 9px 12px rgba(58,34,19,.15)) !important;
+}
+.pk-contact-scope .platform-icon-link svg{
+  width: 50px !important;
+  height: 50px !important;
+  display: block !important;
+}
+@media (max-width: 720px){.pk-contact-scope .icon-only-platforms{
+    gap: 10px !important;
+    margin-top: 14px !important;
+  }
+.pk-contact-scope .platform-icon-link{
+    width: 48px !important;
+    height: 48px !important;
+  }
+.pk-contact-scope .platform-icon-link svg{
+    width: 45px !important;
+    height: 45px !important;
+  }}
+/* V9: clean compact platform buttons anchored at the bottom */
+.pk-contact-scope .contact-card{
+  display: flex !important;
+  flex-direction: column !important;
+}
+.pk-contact-scope .clean-platform-buttons{
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  gap: 10px !important;
+  margin: auto 0 0 !important;
+  padding-top: 20px !important;
+}
+.pk-contact-scope .clean-platform-button{
+  min-height: 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 10px 14px !important;
+  border-radius: 14px !important;
+  text-decoration: none !important;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease !important;
+}
+.pk-contact-scope .clean-platform-button:hover{
+  transform: translateY(-2px) !important;
+}
+.pk-contact-scope .whatsapp-clean{
+  color: #fff !important;
+  background: #25D366 !important;
+  border: 1px solid #25D366 !important;
+  box-shadow: 0 10px 22px rgba(37,211,102,.18) !important;
+}
+.pk-contact-scope .whatsapp-clean:hover{
+  box-shadow: 0 14px 28px rgba(37,211,102,.25) !important;
+}
+.pk-contact-scope .google-clean{
+  color: #202124 !important;
+  background: #fff !important;
+  border: 1px solid #DADCE0 !important;
+  box-shadow: 0 10px 22px rgba(58,34,19,.06) !important;
+}
+.pk-contact-scope .google-clean:hover{
+  border-color: #B7BEC7 !important;
+  box-shadow: 0 14px 28px rgba(58,34,19,.09) !important;
+}
+.pk-contact-scope .clean-logo{
+  width: 34px !important;
+  height: 34px !important;
+  flex: 0 0 34px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+.pk-contact-scope .clean-logo svg{
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+.pk-contact-scope .whatsapp-clean-logo{
+  background: #fff !important;
+  border-radius: 50% !important;
+  padding: 2px !important;
+}
+.pk-contact-scope .clean-platform-button strong{
+  color: inherit !important;
+  font-size: .88rem !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  white-space: nowrap !important;
+}
+@media (max-width: 720px){.pk-contact-scope .clean-platform-buttons{
+    gap: 8px !important;
+    padding-top: 16px !important;
+  }
+.pk-contact-scope .clean-platform-button{
+    min-height: 54px !important;
+    gap: 8px !important;
+    padding: 9px 10px !important;
+    border-radius: 12px !important;
+  }
+.pk-contact-scope .clean-logo{
+    width: 30px !important;
+    height: 30px !important;
+    flex-basis: 30px !important;
+  }
+.pk-contact-scope .clean-platform-button strong{
+    font-size: .76rem !important;
+  }}
+/* V10: final mobile layout refinements */
+@media (max-width: 720px){.pk-contact-scope .contact-section{
+    padding: 50px 0 68px !important;
+  }
+.pk-contact-scope .container{
+    width: calc(100% - 18px) !important;
+  }
+.pk-contact-scope .section-heading{
+    margin-bottom: 28px !important;
+    padding-inline: 5px !important;
+  }
+.pk-contact-scope .section-heading h1{
+    font-size: 2.62rem !important;
+    line-height: .99 !important;
+  }
+.pk-contact-scope .section-heading p{
+    max-width: 560px !important;
+    margin-top: 17px !important;
+    font-size: .91rem !important;
+    line-height: 1.58 !important;
+  }
+.pk-contact-scope .contact-layout{
+    gap: 12px !important;
+  }
+.pk-contact-scope .contact-card{
+    padding: 25px 16px 19px !important;
+  }
+.pk-contact-scope .contact-card h2{
+    font-size: 1.95rem !important;
+    line-height: 1.06 !important;
+  }
+.pk-contact-scope .contact-card > p{
+    margin: 13px 0 20px !important;
+    font-size: .84rem !important;
+    line-height: 1.56 !important;
+  }
+.pk-contact-scope .address-block{
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    gap: 11px !important;
+    padding: 16px 0 !important;
+  }
+.pk-contact-scope .info-copy strong,.pk-contact-scope .info-copy a{
+    overflow-wrap: anywhere !important;
+    font-size: .87rem !important;
+    line-height: 1.45 !important;
+  }
+.pk-contact-scope .phone-grid{
+    grid-template-columns: 1fr !important;
+    gap: 9px !important;
+    margin: 17px 0 !important;
+  }
+.pk-contact-scope .phone-card{
+    min-height: 0 !important;
+    padding: 17px 16px !important;
+  }
+.pk-contact-scope .phone-card strong{
+    font-size: 1.18rem !important;
+    white-space: nowrap !important;
+  }
+.pk-contact-scope .detail-row{
+    grid-template-columns: 40px minmax(0,1fr) !important;
+    gap: 11px !important;
+    padding: 13px 0 !important;
+  }
+.pk-contact-scope .detail-row a{
+    overflow-wrap: anywhere !important;
+    font-size: .85rem !important;
+  }
+.pk-contact-scope .clean-platform-buttons{
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    padding-top: 14px !important;
+  }
+.pk-contact-scope .clean-platform-button{
+    width: 100% !important;
+    min-height: 52px !important;
+    justify-content: flex-start !important;
+    padding: 9px 14px !important;
+  }
+.pk-contact-scope .clean-platform-button strong{
+    font-size: .82rem !important;
+  }
+.pk-contact-scope .map-card{
+    padding: 10px !important;
+  }
+.pk-contact-scope .map-heading{
+    padding: 5px 5px 12px !important;
+  }
+.pk-contact-scope .map-heading h3{
+    font-size: 1.46rem !important;
+  }
+.pk-contact-scope .map-heading p{
+    margin-top: 7px !important;
+    font-size: .77rem !important;
+    line-height: 1.48 !important;
+  }
+.pk-contact-scope .google-bar{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    padding: 11px !important;
+  }
+.pk-contact-scope .google-brand{
+    width: 100% !important;
+  }
+.pk-contact-scope .google-copy span{
+    max-width: none !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    text-overflow: clip !important;
+    line-height: 1.35 !important;
+  }
+.pk-contact-scope .google-button{
+    width: 100% !important;
+    min-height: 43px !important;
+  }
+.pk-contact-scope .final-strip{
+    gap: 16px !important;
+    margin-top: 12px !important;
+    padding: 23px 18px 19px !important;
+  }
+.pk-contact-scope .final-strip p{
+    font-size: .95rem !important;
+    line-height: 1.48 !important;
+  }
+.pk-contact-scope .final-button{
+    min-height: 52px !important;
+  }}
+@media (max-width: 370px){.pk-contact-scope .section-heading h1{
+    font-size: 2.38rem !important;
+  }
+.pk-contact-scope .phone-card strong{
+    font-size: 1.08rem !important;
+  }}
+/* V11: consistent eyebrow plus mobile-only spacing polish */
+/* Match the established grey process-heading style */
+.pk-contact-scope .section-eyebrow{
+  width: min(100%, 880px) !important;
+  display: grid !important;
+  grid-template-columns: minmax(54px, 1fr) auto minmax(54px, 1fr) !important;
+  align-items: center !important;
+  gap: 22px !important;
+  margin: 0 auto 24px !important;
+  color: #66605c !important;
+  font-size: 1.02rem !important;
+  font-weight: 950 !important;
+  line-height: 1.15 !important;
+  letter-spacing: .20em !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
+.pk-contact-scope .section-eyebrow::before,.pk-contact-scope .section-eyebrow::after{
+  width: 100% !important;
+  height: 3px !important;
+  border-radius: 999px !important;
+}
+.pk-contact-scope .section-eyebrow::before{
+  background: #d7a83f !important;
+}
+.pk-contact-scope .section-eyebrow::after{
+  background: var(--orange) !important;
+}
+.pk-contact-scope .final-copy-mobile{
+  display: none;
+}
+@media (max-width: 720px){/* Heading */
+.pk-contact-scope .section-eyebrow{
+    grid-template-columns: 38px minmax(0, auto) 38px !important;
+    gap: 10px !important;
+    margin-bottom: 18px !important;
+    padding: 0 !important;
+    font-size: .64rem !important;
+    line-height: 1.28 !important;
+    letter-spacing: .14em !important;
+  }
+.pk-contact-scope .section-eyebrow::before,.pk-contact-scope .section-eyebrow::after{
+    height: 2px !important;
+  }
+/* Contact card: tighter and more consistent vertical rhythm */
+.pk-contact-scope .contact-card{
+    padding: 23px 16px 17px !important;
+  }
+.pk-contact-scope .office-label{
+    margin-bottom: 12px !important;
+  }
+.pk-contact-scope .contact-card h2{
+    margin-bottom: 0 !important;
+    font-size: 1.90rem !important;
+    line-height: 1.05 !important;
+  }
+.pk-contact-scope .contact-card > p{
+    margin: 11px 0 17px !important;
+    font-size: .82rem !important;
+    line-height: 1.52 !important;
+  }
+.pk-contact-scope .address-block{
+    padding: 14px 0 !important;
+  }
+.pk-contact-scope .phone-grid{
+    gap: 8px !important;
+    margin: 14px 0 !important;
+  }
+.pk-contact-scope .phone-card{
+    padding: 15px 15px !important;
+    border-radius: 14px !important;
+  }
+.pk-contact-scope .phone-card small{
+    margin-bottom: 7px !important;
+  }
+.pk-contact-scope .phone-card strong{
+    font-size: 1.13rem !important;
+  }
+/* The labels and number already explain each action */
+.pk-contact-scope .phone-card span{
+    display: none !important;
+  }
+.pk-contact-scope .small-details{
+    margin-top: 0 !important;
+  }
+.pk-contact-scope .detail-row{
+    padding: 11px 0 !important;
+  }
+/* Compact two-button row below email */
+.pk-contact-scope .clean-platform-buttons{
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    gap: 7px !important;
+    margin-top: 0 !important;
+    padding-top: 12px !important;
+  }
+.pk-contact-scope .clean-platform-button{
+    min-width: 0 !important;
+    min-height: 48px !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 8px 7px !important;
+  }
+.pk-contact-scope .clean-logo{
+    width: 27px !important;
+    height: 27px !important;
+    flex-basis: 27px !important;
+  }
+.pk-contact-scope .clean-platform-button strong{
+    min-width: 0 !important;
+    font-size: .69rem !important;
+    white-space: normal !important;
+    line-height: 1.08 !important;
+    text-align: left !important;
+  }
+/* Shorter, centred final orange CTA */
+.pk-contact-scope .final-strip{
+    gap: 14px !important;
+    padding: 21px 17px 17px !important;
+    text-align: center !important;
+  }
+.pk-contact-scope .final-strip strong{
+    margin-bottom: 9px !important;
+    color: #ffe39a !important;
+    font-size: .75rem !important;
+    line-height: 1.35 !important;
+    letter-spacing: .13em !important;
+    text-align: center !important;
+  }
+.pk-contact-scope .final-strip p{
+    max-width: 560px !important;
+    margin: 0 auto !important;
+    font-size: .92rem !important;
+    line-height: 1.42 !important;
+    text-align: center !important;
+  }
+.pk-contact-scope .final-copy-desktop{
+    display: none !important;
+  }
+.pk-contact-scope .final-copy-mobile{
+    display: inline !important;
+  }
+.pk-contact-scope .final-button{
+    min-height: 48px !important;
+    padding: 12px 18px !important;
+    font-size: .80rem !important;
+  }}
+@media (max-width: 370px){.pk-contact-scope .section-eyebrow{
+    grid-template-columns: 27px minmax(0, auto) 27px !important;
+    gap: 8px !important;
+    font-size: .57rem !important;
+    letter-spacing: .11em !important;
+  }
+.pk-contact-scope .clean-platform-button strong{
+    font-size: .64rem !important;
+  }
+.pk-contact-scope .clean-logo{
+    width: 25px !important;
+    height: 25px !important;
+    flex-basis: 25px !important;
+  }}
