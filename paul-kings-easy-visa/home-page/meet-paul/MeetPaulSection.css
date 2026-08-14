@@ -2894,7 +2894,7 @@
     max-width: none !important;
     padding: 16px 20px 18px !important;
     transform: none !important;
-    border-radius: 0 0 24px 24px !important;
+    border-radius: 0 !important;
   }
 }
 
@@ -2907,7 +2907,7 @@
     max-width: none !important;
     padding: 14px 16px 15px !important;
     transform: none !important;
-    border-radius: 0 0 20px 20px !important;
+    border-radius: 0 !important;
   }
 
   .pk-meet-scope .name-badge span {
