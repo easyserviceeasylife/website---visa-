@@ -16,7 +16,7 @@ export const meetPaulHtml = `
 <div class="meet-card">
 <div class="portrait-side">
 <div class="portrait-stack">
-<img alt="Paul King holding a document folder" class="paul-image" loading="lazy" src="/images/home-page/meet-paul/paul-king-portrait.jpeg"/>
+<img alt="Paul King holding a document folder" class="paul-image" loading="lazy" src="/images/home-page/paul-king-portrait.jpeg"/>
 <div class="name-badge">
 <strong>Paul King</strong>
 <span>Managing Director · 20+ Years British Embassy Experience</span>
